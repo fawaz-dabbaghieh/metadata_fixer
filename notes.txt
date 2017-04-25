@@ -1,0 +1,12 @@
+Check for experiment ID and file names (done)
+
+1- find out about the bug (Done)
+2- send the files and scripts (done)
+3- Thursday, give updated files (done)
+4- compare with Karl files, convert to TSV
+5- contact people with their experiments
+6- more json operations
+7- controlled vocabulary
+
+diff -r --brief -Nr ../../Bioconductor/DeepBlueR/ . | grep -v .svn |  awk '{print "cp " $2 " " $4}'
+grep EXPERIMENT_ID */* | awk -F "/" '{print $2}' | grep EXPERIMENT_ID | awk -F "_emd.tsv:EXPERIMENT_ID" '{print $1 $2}'
