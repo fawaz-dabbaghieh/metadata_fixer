@@ -1,12 +1,10 @@
 #!/usr/bin/python
 
 import codecs
-import re
 import sys
 import os
 
 #making a list of keys and adding new keys.
-
 def new_keys(keys, files):
 	for f in files:
 		f = codecs.open(f, encoding = "UTF-8-sig")
@@ -31,33 +29,37 @@ def return_value(key, lines):
 			continue
 	return value
 
+#Get files paths and check if path is correct
 while True:
-	list_files = raw_input("Give the path to the list of files you want to merge:\n")
-	if os.path.exists(list_files):
+	arguments = sys.argv
+	if os.path.exists(arguments[1]):
 		break
 	else:
-		print("The path is not correct")
+		print("The path in first argument is not correct")
+		sys.exit()
 
-name = raw_input("Give the name of the output tsv file:")
 
-f = codecs.open(list_files, encoding = 'utf-8-sig')
+f = codecs.open(arguments[1], encoding = 'utf-8-sig')
 files = f.readlines()
 f.close()
 for idx,l in enumerate(files):
 	files[idx] = l.strip()
 
+#Get a list of all keys
 keys = []
 keys = new_keys(keys = keys, files = files)
 
-
+#making the tsv table
 new_table = []
-new_table.append("\t".join(keys))
+new_table.append("\t".join(keys))	#First line is the keys
+
 for f in files:
 	f = codecs.open(f, encoding = "UTF-8-sig")
 	lines = f.readlines()
 	f.close()
 	for idx, l in enumerate(lines):
 		lines[idx] = l.split("\t")
+
 	new_file = []
 	for key in keys:
 		value = return_value(key = key, lines = lines)
@@ -65,10 +67,10 @@ for f in files:
 	for idx, value in enumerate(new_file):
 		new_file[idx] = value.strip()
 	new_file = "\t".join(new_file)
-	new_file = new_file
 	new_table.append(new_file)
 
-w = codecs.open(name, "w+")
+w = codecs.open(arguments[2], "w+")
 for l in new_table:
 	w.write(l.encode("utf-8")+"\n")
 w.close()
+
