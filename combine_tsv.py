@@ -21,7 +21,7 @@ def new_keys(keys, files):
 
 #returning the value that corresponds to key
 def return_value(key, lines):
-	value = "NA/na"
+	value = "[[[Extra Key Introduced]]]"
 	for l in lines:
 		if key in l:
 			value = l[1]
@@ -31,15 +31,15 @@ def return_value(key, lines):
 
 #Get files paths and check if path is correct
 while True:
-	arguments = sys.argv
-	if os.path.exists(arguments[1]):
+	list_files = raw_input("Give the path to the list of files you want to merge:\n")
+	if os.path.exists(list_files):
 		break
 	else:
-		print("The path in first argument is not correct")
-		sys.exit()
+		print("The path is not correct")
 
+name = raw_input("Give the name of the output tsv file:")
 
-f = codecs.open(arguments[1], encoding = 'utf-8-sig')
+f = codecs.open(list_files, encoding = 'utf-8-sig')
 files = f.readlines()
 f.close()
 for idx,l in enumerate(files):
@@ -69,7 +69,7 @@ for f in files:
 	new_file = "\t".join(new_file)
 	new_table.append(new_file)
 
-w = codecs.open(arguments[2], "w+")
+w = codecs.open(name, "w+")
 for l in new_table:
 	w.write(l.encode("utf-8")+"\n")
 w.close()
