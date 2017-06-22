@@ -12,7 +12,7 @@ import sys
 import os
 import codecs
 import pickle
-import functions
+import functions		#an acompanied python file with functions needed to process the files
 
 def strip(x): return x.strip()
 def encode(x): return x.encode("utf-8")
@@ -21,7 +21,6 @@ def encode(x): return x.encode("utf-8")
 if sys.argv[1:] == []:
 	print "No Arguments were given, please try -h or --help"
 	sys.exit()
-
 
 #Arguments parser
 parser = OptionParser()
@@ -37,6 +36,8 @@ parser.add_option("-k","--key", dest="key", help="Shows the accepted values for 
 
 parser.add_option("--list_keys", dest="list_keys", action="store_true",default=False,help="List all keys in dictionary")
 
+parser.add_option("--list_regex", dest="list_regex", action="store_true",default=False,help="List all regular expression that are controlled with examples")
+
 (options, args) = parser.parse_args()
 filename = options.filename
 list_file = options.list_file
@@ -45,32 +46,40 @@ verbose = options.verbose
 key_from_user = options.key
 
 
-#loading the dictionary
-if os.path.exists("dictionary.txt"):
-	dic = open("dictionary.txt", "r+")
-	dictionary = pickle.load(dic)
-	dic.close()
-else:
-	print("The dictionary file has either not been built or is not in this directory")
-	sys.exit()
+#loading the dictionaries, we have 3 dictionaries, one for experiments metadata, one for samples and one for the regular expression to check for
+dictionaries = ["samples_dictionary.txt", "experiments_dictionary.txt","regex_dictionary.txt"]
+for idx, l in enumerate(dictionaries):
+	if os.path.exists(l):
+		f = open(l, "r")
+		dictionaries[idx] = pickle.load(f)
+		f.close()
+	else:
+		print("The dictionary file has either not been built or it is not in this directory")
+		sys.exit()
 
 #checking the file from option -f --file
 if filename is not None:
 	if os.path.exists(filename):
-		f = codecs.open(filename, encoding = "utf-8-sig")
-		lines = f.readlines()
-		f.close()
-		lines = map(strip,lines)
-		lines = map(encode, lines)
 		if verbose == True:
-			print filename + "\n"
-			functions.check_vocab_verbose(lines = lines, dictionary = dictionary)
+		#	if f.endswith("emd.tsv"):
+		#		print f + "\n"
+		#		functions.check_vocab_verbose(lines = lines, dictionary = dictionaries[1])
+		#	else:
+		#		print f + "\n"
+		#		functions.check_vocab_verbose(lines = lines, dictionary = dictionaries[0])
+			functions.check_vobac_verbose(filename, dictionaries)
 		else:
-			print filename + "\n"
-			functions.check_vocab(lines = lines, dictionary = dictionary)
+		#	if f.endswith("emd.tsv"):
+		#		print f + "\n"
+		#		functions.check_vocab(lines = lines, dictionary = dictionaries[1])
+		#	else:
+		#		print f + "\n"
+		#		functions.check_vocab(lines = lines, dictionary = dictionaries[0])
+			functions.check_vocab(filename, dictionary)
 	else:
 		print("the path ({}) you gave is not correct, please check it again".format(options.filename))
 		
+
 #checking the file from option -l --list
 if list_file is not None:
 	if os.path.exists(list_file):
@@ -79,51 +88,90 @@ if list_file is not None:
 		f.close()
 		files = map(strip,files)
 		for f in files:
-			read = codecs.open(f, encoding = "utf-8-sig")
-			lines = read.readlines()
-			read.close()
-			lines = map(strip,lines)
-			lines = map(encode, lines)
-			if verbose == True:
-				print f + "\n"
-				functions.check_vocab_verbose(lines = lines, dictionary = dictionary)
-			else:
-				print f + "\n"
-				functions.check_vocab(lines = lines, dictionary = dictionary)
+			if verbose == True:	#for verbose
+				if f.endswith("emd.tsv"):	#experiment metadata
+					print f + "\n"
+					functions.check_vocab_verbose(lines = lines, dictionary = dictionaries[1])
+				else:				#sample metadata
+					print f + "\n"
+					functions.check_vocab_verbose(lines = lines, dictionary = dictionaries[0])
+
+			else:	#for not verbose
+				if f.endswith("emd.tsv"):	#experiment metadata
+					print f + "\n"
+					functions.check_vocab(lines = lines, dictionary = dictionaries[1])
+
+				else:				#sample metadata
+					print f + "\n"
+					functions.check_vocab(lines = lines, dictionary = dictionaries[0])
 	else:
 		print("the path ({}) you gave is not correct, please check it again".format(list_file))
 
 
 #checking the file from option -d --directory
 if dir_path is not None:
+	if not dir_path.endswith("/"):		#adding a slash to the directory name in case it was forgotten
+		dir_path = dir_path + "/"
+
 	if os.path.exists(dir_path):
-		files = os.listdir(dir_path)
-		files = [l for l in files if l.endswith("smd.txt") or l.endswith("emd.tsv")]
-		files = map(strip,files)
-		for f in files:
-			read = codecs.open(dir_path+"/"+f, encoding = "utf-8-sig")
+		data_files = []
+		for root, dirs, files in os.walk(dir_path):	#Checking the directory and sub direcotory recursively and listing all files
+			for f in files:
+				if f.endswith("emd.tsv") or f.endswith("smd.txt"):
+					data_files.append(os.path.join(root, f))
+
+		for f in data_files:
+			read = codecs.open(f, encoding = "utf-8-sig")
 			lines = read.readlines()
 			read.close()
 			lines = map(strip,lines)
 			lines = map(encode, lines)
 			if verbose == True:
-				print f + "\n"
-				functions.check_vocab_verbose(lines = lines, dictionary = dictionary)
+				if f.endswith("emd.tsv"):
+					print f + "\n"
+					functions.check_vocab_verbose(lines = lines, dictionary = dictionaries[1])
+				else:
+					print f + "\n"
+					functions.check_vocab_verbose(lines = lines, dictionary = dictionaries[0])
 			else:
-				print f + "\n"
-				functions.check_vocab(lines = lines, dictionary = dictionary)
+				if f.endswith("emd.tsv"):
+					print f + "\n"
+					functions.check_vocab(lines = lines, dictionary = dictionaries[1])
+				else:
+					print f + "\n"
+					functions.check_vocab(lines = lines, dictionary = dictionaries[0])
 	else:
 		print("the path ({}) you gave is not correct, please check it again".format(dir_path))	
 
 #checking the file from option -k --key
-if options.key is not None:
-	if options.key in dictionary.keys():
-		print dictionary[key_from_user]
+if key_from_user is not None:
+	if key_from_user in dictionaries[0].keys():
+		print dictionaries[0][key_from_user]
+
+	if key_from_user in dictionaries[1].keys():
+		print dictionaries[1][key_from_user]
+
+	if key_from_user in dictionaries[2].keys():
+		print dictionaries[2][key_from_user]
+
 	else:
 		print("The key ({}) you entered is not one of the dictionary keys".format(key_from_user))
 
 #checking the file from option --list_keys
 if options.list_keys is True:
-	list_keys = dictionary.keys()
+	list_keys = ["####################		samples metadata keys		####################\n"]
+	for k in dictionaries[0].keys():
+		list_keys.append(k)
+	list_keys.append("\n####################		experiments metadata keys		####################\n")
+	for k in dictionaries[1].keys():
+		list_keys.append(k)
+
 	list_keys = map(encode, list_keys)
-	print list_keys
+	print "\n".join(list_keys)
+
+
+#listing regular expression available
+if options.list_regex is True:
+	for k in dictionaries[2]:
+		print k
+		print dictionaries[2][k]

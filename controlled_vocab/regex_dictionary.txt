@@ -1,0 +1,117 @@
+(dp0
+S'ChromatinAccessibility_CHROMATIN_AMOUNT'
+p1
+(lp2
+S'^\\d+$'
+p3
+aS'A number only'
+p4
+asS'BIOLOGICAL_REPLICATE_ID'
+p5
+(lp6
+g3
+aS'one number only'
+p7
+asS'EXTRACTION_PROTOCOL_STARTING_NR_CELLS'
+p8
+(lp9
+S'^\\d[\\.x\\^\\d]+?\\d$'
+p10
+aS'Number in scientific notation. e.g. 2.25x10^6'
+p11
+asS'SAMPLE_ID'
+p12
+(lp13
+S'^\\d{2}_\\w+_\\w+_\\w{2,4}$'
+p14
+aS'According to the DEEP sample naming scheme'
+p15
+asS'SEQUENCING_DATE'
+p16
+(lp17
+S'\\d{4}/[01][1-9]/[012]\\d(;\\s\\d{4}/[01][1-9]/[012]\\d){0,3}?$'
+p18
+aS'he date format should be YYYY/MM/DD in case more than on date the should be separated with a ;'
+p19
+asS'EXTRACTION_PROTOCOL_SONICATION_FRAGMENT_SIZE_RANGE'
+p20
+(lp21
+S'^\\d+-\\d+$'
+p22
+aS'Two numbers separated by a -, e.g. 150-400'
+p23
+asS'RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY'
+p24
+(lp25
+S'^\\d+\\sng\\stotal\\sRNA$'
+p26
+aS'A number in ng then total RNA, e.g. 700 ng total RNA'
+p27
+asS'RNA_cDNA_PREPARATION_PCR_NUMBER_CYCLES'
+p28
+(lp29
+g3
+aS'A number'
+p30
+asS'CHIP_PROTOCOL_CHROMATIN_AMOUNT'
+p31
+(lp32
+S'^\\d+[\\.\\d]+?\\s\xc2\xb5g'
+p33
+aS'One number then a space then \xc2\xb5g, e.g. 3.5 \xc2\xb5g'
+p34
+asS'EXPERIMET_DATE'
+p35
+(lp36
+g18
+aS'The date format should be YYYY/MM/DD in case more than on date the should be separated with a ;'
+p37
+asS'LIBRARY_GENERATION_INITIAL_INPUT_QNTY'
+p38
+(lp39
+S'^\\d+[\\.\\d]+?\\sng$'
+p40
+aS'A number then a space the ng. e.g 500 ng or 2.5 ng'
+p41
+asS'TECHNICAL_REPLICATE_ID'
+p42
+(lp43
+g3
+aS'A number'
+p44
+asS'EXPERIMENT_ID'
+p45
+(lp46
+S'^\\d{2}_\\w+_\\w+_\\w+_\\w+_[A-Z]_[0-9]$'
+p47
+aS'According to the DEEP sample naming scheme'
+p48
+asS'ChromatinAccessibility_ENZYME_AMOUNT'
+p49
+(lp50
+S'^\\d+\\sU/ml'
+p51
+aS'A number then a space the U/ml, e.g. 40 U/ml'
+p52
+asS'LIBRARY_GENERATION_PCR_NUMBER_CYCLES'
+p53
+(lp54
+S'\\d+[-\\d]+?$'
+p55
+aS'A number or a range separated by a -, e.g. 15 or 12-13'
+p56
+asS'CHIP_PROTOCOL_DURATION_CROSSLINKING'
+p57
+(lp58
+S'^\\d+\\smin$'
+p59
+aS'Number then a space then min,e.g. 5 min'
+p60
+asS'LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION'
+p61
+(lp62
+S'^\\d+[-\\d]+?\\sbp$'
+p63
+aS'A number or a range separated by - then a space then bp, e.g. 200-500 bp'
+p64
+as.
