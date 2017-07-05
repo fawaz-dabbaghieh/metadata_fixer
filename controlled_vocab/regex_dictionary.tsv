@@ -1,0 +1,17 @@
+ChromatinAccessibility_CHROMATIN_AMOUNT	^\d+$	A number only
+ChromatinAccessibility_ENZYME_AMOUNT	^\d+\sU/ml	A number then a space the U/ml, e.g. 40 U/ml
+BIOLOGICAL_REPLICATE_ID	^\d+$	one number only
+EXTRACTION_PROTOCOL_STARTING_NR_CELLS	^\d[\.x\^\d]+?\d$	Number in scientific notation. e.g. 2.25x10^6
+CHIP_PROTOCOL_CHROMATIN_AMOUNT	^\d+[\.\d]+?\sµg	One number then a space then µg, e.g. 3.5 µg
+SEQUENCING_DATE	\d{4}/[01][1-9]/[012]\d(;\s\d{4}/[01][1-9]/[012]\d){0,3}?$	he date format should be YYYY/MM/DD in case more than on date the should be separated with a ;
+EXTRACTION_PROTOCOL_SONICATION_FRAGMENT_SIZE_RANGE	^\d+-\d+$	Two numbers separated by a -, e.g. 150-400
+RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY	^\d+\sng\stotal\sRNA$	A number in ng then total RNA, e.g. 700 ng total RNA
+RNA_cDNA_PREPARATION_PCR_NUMBER_CYCLES	^\d+$	A number
+EXPERIMET_DATE	\d{4}/[01][1-9]/[012]\d(;\s\d{4}/[01][1-9]/[012]\d){0,3}?$	The date format should be YYYY/MM/DD in case more than on date the should be separated with a ;
+LIBRARY_GENERATION_INITIAL_INPUT_QNTY	^\d+[\.\d]+?\sng$	A number then a space the ng. e.g 500 ng or 2.5 ng
+TECHNICAL_REPLICATE_ID	^\d+$	A number
+EXPERIMENT_ID	^\d{2}_\w+_\w+_\w+_\w+_[A-Z]_[0-9]$	According to the DEEP sample naming scheme
+SAMPLE_ID	^\d{2}_\w+_\w+_\w{2,4}$	According to the DEEP sample naming scheme
+LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION	^\d+[-\d]+?\sbp$	A number or a range separated by - then a space then bp, e.g. 200-500 bp
+CHIP_PROTOCOL_DURATION_CROSSLINKING	^\d+\smin$	Number then a space then min,e.g. 5 min
+LIBRARY_GENERATION_PCR_NUMBER_CYCLES	\d+[-\d]+?$	A number or a range separated by a -, e.g. 15 or 12-13
