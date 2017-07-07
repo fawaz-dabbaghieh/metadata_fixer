@@ -18,7 +18,7 @@ def split(x): return x.split("\t")
 def encode(x): return x.encode("utf-8")
 
 
-#Check if the metadata file path was given as an argument other wise take it from input
+#Check if the metadata file path was given as an argument otherwise take it from input
 arguments = sys.argv
 
 if len(arguments) == 1:
@@ -29,7 +29,7 @@ if len(arguments) == 1:
         elif metadata_path == "exit":
             sys.exit()
         else:
-            print("WARNING!! The metadata directory path is not valid, please try again or type \"exit\"")
+            print("The metadata directory path is not valid, please try again or type \"exit\"")
 else:
     if os.path.exists(arguments[1]):
         metadata_path = arguments[1]
@@ -37,9 +37,8 @@ else:
         print("WARNING!! The metadata directory path given as an argument was not valid, please try again")
         sys.exit()
 
-#shutil.copytree(metadata_path, metadata_path +"_copy")
 
-#getting the names of file recursively and storing experiment, sample and directories in lists
+#storing the names of the directories and files in lists
 metadata_files = []
 directories = []
 for root, dirs, files in os.walk(metadata_path):
@@ -52,8 +51,7 @@ for root, dirs, files in os.walk(metadata_path):
 
 
 #####################################################################################################
-#making a copy folder for processsed files for now, later will be deleted and one output folder will be present
-#TODO use regular expression to name metadata_path everything before the "/"
+#copying all files to work on them, then output the results in a separate folder and delete the intermediate copy folder
 if metadata_path.endswith("/"):
     metadata_cp = metadata_path.replace("/", "_cp/")
 else:
@@ -65,42 +63,43 @@ if not os.path.exists(metadata_cp):
         os.makedirs(directory.replace(metadata_path, metadata_cp))
 
         
-#looping through the files
-#I separated the several tasks (removing empty lines, fixing encoding, removing extra spaces and so on
-#To 3 functions (lines_fixer1, lines_fixer2 and experiment_id)
-#This way it's easier to cartch the errors and trouble shoot
-#Also I saved the keys separately for later filtering
-#As the files will be combined to one table to be processed with the JSON operations we have, then separated again to individual files
-#So we need the old keys to filter agains, this way we'll end up with new files that have the same old keys but new values
+"""
+looping through the files.
+I separated the several tasks (removing empty lines, fixing encoding, removing extra spaces and so on) To 3 functions (lines_fixer1, lines_fixer2 and experiment_id) This way it's easier to catch the errors and trouble shoot any problem.
+
+Also I saved the keys of the original files separately for later filtering after merging all the files together.
+
+I'm reading each file once and looping through the lines
+"""
 
 all_files_keys = [] #storing the unique keys from all the files to make the big table
              
 
 for f in metadata_files:
-    lines = read_files(file_name = f)
+    lines = read_files(file_name = f)		#function for reading the files with the correct encoding
     
-    new_lines = lines_fixer1(lines)
-    new_lines = lines_fixer2(new_lines)
-    if f.endswith("emd.tsv"):
-        new_lines = experiment_id_fix(new_lines, f)
+    new_lines = lines_fixer1(lines)		#First round of fixes
+    new_lines = lines_fixer2(new_lines)		#Second round of fixes
+    if f.endswith("emd.tsv"):                   #TODO readme
+        new_lines = experiment_id_fix(new_lines, f)	#This function checks if the experiment_id is correct
     else:
-        new_lines = deep_sample_id_fix(new_lines, f)
+        new_lines = deep_sample_id_fix(new_lines, f)	#This function checks if the sample_id is correct
 
-    keys = []
+    keys = []			#storing the keys for later filtering
     for l in new_lines:
         keys.append(l.split("\t")[0])
     
     for k in keys:
-        if k in all_files_keys:
+        if k in all_files_keys:	#making a list of all the unique keys of all the files
             pass
         else:
             all_files_keys.append(k)
     
-    f_write = open(f.replace(metadata_path,metadata_cp) + "keys", "w+") #store the kyes for later filtering, faster than re-reading the old files and extracting the keys then filtering
+    f_write = open(f.replace(metadata_path,metadata_cp) + "keys", "w+") 
     pickle.dump(keys, f_write)
     f_write.close()
     
-    f_write = open(f.replace(metadata_path,metadata_cp), "w+")
+    f_write = open(f.replace(metadata_path,metadata_cp), "w+")	#writing the fixed files
     for l in new_lines:
         f_write.write(l.encode('utf-8') + '\n')
     f_write.close()
@@ -141,7 +140,7 @@ after_json_experiment_table = after_json_experiment_table.split("\n")
 #for idx, l in enumerate(after_json_experiment_table):
     #after_json_experiment_table[idx] = after_json_experiment_table[idx].decode("utf-8")
     
-    
+
 if after_json_experiment_table[-1] == "":
     del after_json_experiment_table[-1]
 

@@ -1,0 +1,7024 @@
+[
+{
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column BIOMATERIAL_PROVIDER",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BIOMATERIAL_PROVIDER",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Stefan Wallner / Regensburg University Hospital"
+        ],
+        "to": "Stefan Wallner/Regensburg University Hospital"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column COMMENT",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "COMMENT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          " age is mean of pool"
+        ],
+        "to": "age is mean of pool"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ChromatinAccessibility_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "ChromatinAccessibility_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "500000 nuclei"
+        ],
+        "to": "500000"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ChromatinAccessibility_ENZYME_AMOUNT",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "ChromatinAccessibility_ENZYME_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "60U"
+        ],
+        "to": "60 U"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ChromatinAccessibility_METHOD",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "ChromatinAccessibility_METHOD",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NOME"
+        ],
+        "to": "NOMe"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MARKERS",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "MARKERS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CD3+ CD4+ CD25neg CD45-RA+ CCR7+"
+        ],
+        "to": "CD3+ CD4+ CD25neg CD45RA+ CCR7+"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXPERIMENT_DATE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "EXPERIMENT_DATE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "05/22/14"
+        ],
+        "to": "05/22/2014"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXPERIMENT_TYPE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "EXPERIMENT_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "strandedtotalrna-seq"
+        ],
+        "to": "StrandedTotalRNA-seq"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXPERIMENT_TYPE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "EXPERIMENT_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Stranded totalRNA-seq"
+        ],
+        "to": "StrandedTotalRNA-seq"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "500 ng total RNA"
+        ],
+        "to": "500ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "500 ng total RNA"
+        ],
+        "to": "500ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_THERMOCYCLING_PROGRAM",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_THERMOCYCLING_PROGRAM",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "30 s 98ºC, [10 s 98ºC, 30 s 60ºC, 30 s 72ºC] 15 cycles, 5 min 72ºC, hold 4ºC"
+        ],
+        "to": "30 s 98°C, [10 s 98°C, 30 s 60°C, 30 s 72°C] 15 cycles, 5 min 72°C, hold 4°C"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PROTOCOL",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Illumina TruSeq stranded totalRNA (Part # 15031048 Rev. E)"
+        ],
+        "to": "Illumina TrueSeq stranded totalRNA (Part # 15031048 Rev. E)"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_EXTRACTION_PROTOCOL",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "RNA_EXTRACTION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Trizol (Life Technologies Cat. No. 15596-018)",
+          "Trizol   (Life Technologies Cat. No. 15596-018)"
+        ],
+        "to": "Trizol (Life Technologies Cat. No. 15596-018)"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_INITIAL_QNTY",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "RNA_PREPARATION_INITIAL_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "500 ng total RNA"
+        ],
+        "to": "500ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "500 ng total RNA"
+        ],
+        "to": "500ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_CONTROL_SOFTWARE_VERSION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "SEQUENCING_CONTROL_SOFTWARE_VERSION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HCS 2.0.12.0 / RTA 1.17.21.3/ Recipe Fragment: 1.3.61.0"
+        ],
+        "to": "HCS 2.0.12.0 / RTA 1.17.21.3 / Recipe Fragment: 1.3.61.0"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_CONTROL_SOFTWARE_VERSION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "SEQUENCING_CONTROL_SOFTWARE_VERSION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HCS 2.0.12.0 / RTA 1.17.21.3 / Recipe Fragment: 1.3.61.0"
+        ],
+        "to": "HCS 2.0.12.0 / RTA 1.17.21.3 / Recipe Fragment 1.3.61.0"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_CONTROL_SOFTWARE_VERSION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "SEQUENCING_CONTROL_SOFTWARE_VERSION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HCS 2.2.38 / RTA 1.18.61/ Recipe Fragment: 1.5.14.0"
+        ],
+        "to": "HCS 2.2.38 / RTA 1.18.61 / Recipe Fragment 1.5.14.0"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DONOR_AGE_UNIT",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DONOR_AGE_UNIT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "week"
+        ],
+        "to": "weeks"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_cDNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "RNA_cDNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "16degC for 1h"
+        ],
+        "to": "16°C for 1h"
+      }
+    ]
+  },
+   {
+   "op": "core/mass-edit",
+   "description": "Mass edit cells in column EXPERIMENT_TYPE",
+   "engineConfig": {
+     "mode": "row-based",
+     "facets": []
+   },
+   "columnName": "EXPERIMENT_TYPE",
+   "expression": "value",
+   "edits": [
+     {
+       "fromBlank": false,
+       "fromError": false,
+       "from": [
+         "NOME"
+       ],
+       "to": "NOMe"
+     }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DISEASE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DISEASE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "obese"
+        ],
+        "to": "obesity"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DONOR_ETHNICITY",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DONOR_ETHNICITY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "unkown"
+        ],
+        "to": "unknown"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column MARKERS",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "MARKERS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CD3+, CD4+, CD25-, CD45RA-, CCR7+"
+        ],
+        "to": "CD3+ CD4+ CD25neg CD45-RAneg CCR7+"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column BISULFITE_CONVERSION_PROTOCOL",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BISULFITE_CONVERSION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Zymo EZ-DNA methylation Gold"
+        ],
+        "to": "Zymo EZ-DNA methylation-Gold"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column BISULFITE_CONVERSION_PROTOCOL",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "BISULFITE_CONVERSION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Zymo Gold"
+        ],
+        "to": "Zymo EZ-DNA methylation-Gold"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "mode": "rosw-based",
+      "facets": []
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1,00E+06"
+        ],
+        "to": "1E+06"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "400"
+        ],
+        "to": "400 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "380"
+        ],
+        "to": "380 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "450"
+        ],
+        "to": "450 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "350"
+        ],
+        "to": "350 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "340"
+        ],
+        "to": "340 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CONTACT_PERSON",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CONTACT_PERSON",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Anupam Sinha(a.sinha@ikmb.unikiel.de)"
+        ],
+        "to": "Anupam Sinha(a.sinha@ikmb.uni-kiel.de)"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CONTACT_PERSON",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CONTACT_PERSON",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Anupam Sinha"
+        ],
+        "to": "Anupam Sinha(a.sinha@ikmb.uni-kiel.de)"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "140bp"
+        ],
+        "to": "140 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "143bp"
+        ],
+        "to": "143 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "144bp"
+        ],
+        "to": "144 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "145bp"
+        ],
+        "to": "145 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "145bp-160bp"
+        ],
+        "to": "145 bp-160 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "147bp"
+        ],
+        "to": "147 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "150bp"
+        ],
+        "to": "150 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "153bp"
+        ],
+        "to": "153 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5’ GUUCAGAGUUCUACAGUCCGACGAUC"
+        ],
+        "to": "5'GUUCAGAGUUCUACAGUCCGACGAUC"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5GUUCAGAGUUCUACAGUCCGACGAUC"
+        ],
+        "to": "5'GUUCAGAGUUCUACAGUCCGACGAUC"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_POLYMERASE_TYPE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_POLYMERASE_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "From mastermix of TruSeq small RNA kit"
+        ],
+        "to": "From mastermix of TruSeq smallRNA kit"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Gel.excision, 145-160bp fraction"
+        ],
+        "to": "Gel.excision, 145-160 bp fraction"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1ug total RNA"
+        ],
+        "to": "1 ug total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_3&apos;_RNA ADAPTER_LIGATION_PROTOCOL",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "RNA_PREPARATION_3&apos;_RNA ADAPTER_LIGATION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq small RNA protocol"
+        ],
+        "to": "according to Illumina TruSeq smallRNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_3&apos;_RNA_ADAPTER_SEQUENCE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "RNA_PREPARATION_3&apos;_RNA_ADAPTER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq small RNA protocol"
+        ],
+        "to": "according to Illumina TruSeq smallRNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_5&apos;_DEPHOSPHORYLATION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "RNA_PREPARATION_5&apos;_DEPHOSPHORYLATION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq small RNA protocol"
+        ],
+        "to": "according to Illumina TruSeq smallRNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_5&apos;_PHOSPHORYLATION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "RNA_PREPARATION_5&apos;_PHOSPHORYLATION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq small RNA protocol"
+        ],
+        "to": "according to Illumina TruSeq smallRNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_INITIAL_QNTY",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "RNA_PREPARATION_INITIAL_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "800ng total RNA"
+        ],
+        "to": "800 ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_REVERSE_TRANSCRIPTION_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "RNA_PREPARATION_REVERSE_TRANSCRIPTION_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq small RNA protocol"
+        ],
+        "to": "according to Illumina TruSeq smallRNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "RNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq small RNA protocol"
+        ],
+        "to": "according to Illumina TruSeq smallRNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "800ng total RNA"
+        ],
+        "to": "800 ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_cDNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "RNA_cDNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq small RNA protocol"
+        ],
+        "to": "according to Illumina TruSeq smallRNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_cDNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "RNA_cDNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "50°C for 1h"
+        ],
+        "to": "50degC for 1h"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_CYCLES",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "SEQUENCING_CYCLES",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "51bp"
+        ],
+        "to": "51 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_PE_TYPE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "SEQUENCING_PE_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "SINGLE"
+        ],
+        "to": "Single-end"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_BEAD_AMOUNT",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CHIP_PROTOCOL_BEAD_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "10µl"
+        ],
+        "to": "10 µl"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5.56 µg"
+        ],
+        "to": "5.56 µg DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0.396 µg"
+        ],
+        "to": "0.396 µg DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0.64 µg"
+        ],
+        "to": "0.64 µg DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0.7 µg"
+        ],
+        "to": "0.7 µg DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1.05 µg"
+        ],
+        "to": "1.05 µg DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1.32 µg"
+        ],
+        "to": "1.32 µg DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2.58 µg"
+        ],
+        "to": "2.58 µg DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2.74 µg"
+        ],
+        "to": "2.74 µg DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "3.06 µg"
+        ],
+        "to": "3.06 µg DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "3.3 µg"
+        ],
+        "to": "3.3 µg DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CONTACT_LAB",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CONTACT_LAB",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "MPI-IE Deep Sequencing"
+        ],
+        "to": "MPI-IE Deep Sequencing Facility"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CONTACT_LAB",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CONTACT_LAB",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Epigenomics Lab at the Max Planck for Molecular Genetics"
+        ],
+        "to": "Epigenomics Lab at the Max Planck Institute for Molecular Genetics"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DNA_PREPARATION_FRAGMENT_SIZE_RANGE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DNA_PREPARATION_FRAGMENT_SIZE_RANGE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "200-600bp"
+        ],
+        "to": "200-600 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DNA_PREPARATION_FRAGMENT_SIZE_RANGE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "DNA_PREPARATION_FRAGMENT_SIZE_RANGE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "200-700bp"
+        ],
+        "to": "200-700 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXPERIMENT_TYPE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "EXPERIMENT_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ChIPseq"
+        ],
+        "to": "ChIP-seq"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXPERIMENT_TYPE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "EXPERIMENT_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ChIP-Seq"
+        ],
+        "to": "ChIP-seq"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_NUMBER_CYCLES",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_NUMBER_CYCLES",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "10 cycles"
+        ],
+        "to": "10"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_NUMBER_CYCLES",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_NUMBER_CYCLES",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "12 Cycles"
+        ],
+        "to": "12"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_NUMBER_CYCLES",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_NUMBER_CYCLES",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "12 cycles"
+        ],
+        "to": "12"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRIMER_CONC",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRIMER_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "not given in the protocol (1 µl of universal and 1 µl of index primer per 50 µl PCR reaction)"
+        ],
+        "to": "not given in the protocol (1µl of universal and 1 µl of index primer per 50 µl PCR reaction)"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Agencourt AMPure XP Beads (Beckman Coulter"
+        ],
+        "to": "Agencourt AMPure XP Beads (Beckman Coulter, A63881)"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "AMPure XP (Beckman Coulter)"
+        ],
+        "to": "Agencourt AMPure XP Beads (Beckman Coulter, A63881)"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_R_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_R_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NEBNext Index 19 Primer for Illumina (NEB, E7500); 5´-CAAGCAGAAGACGGCATACGAGATCGTTTCACGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC-s-T-3´",
+          "NEBNext Index 19 Primer for Illumina (NEB, E7500) 5´-CAAGCAGAAGACGGCATACGAGATCGTTTCACGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC-s-T-3´"
+        ],
+        "to": "NEBNext Index 19 Primer for Illumina (NEB, E7500); 5´-CAAGCAGAAGACGGCATACGAGATCGTTTCACGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC-s-T-3´"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Prior to PCR not measured, Starting amount for library preparation: < 2.5 ng fragmented IP DNA"
+        ],
+        "to": "Prior to PCR not meassured, Starting amount for library preparation: < 2.5 ng fragmented IP DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_CYCLES",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "SEQUENCING_CYCLES",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2x50 bp\t6bp Index CGATGT"
+        ],
+        "to": "2x50 bp\t6 bp Index CGATGT"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_CYCLES",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "SEQUENCING_CYCLES",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2x50 bp, 7bp Index"
+        ],
+        "to": "2x50 bp, 7 bp Index"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_LANE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "SEQUENCING_LANE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1 to 3"
+        ],
+        "to": "1-3"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_LANE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "SEQUENCING_LANE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1 to 6"
+        ],
+        "to": "1-6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_LANE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "SEQUENCING_LANE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1 to 8"
+        ],
+        "to": "1-8"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_LANE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "SEQUENCING_LANE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "4 to 6"
+        ],
+        "to": "4-6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_LANE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "SEQUENCING_LANE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5 to 6"
+        ],
+        "to": "5-6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_LANE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "SEQUENCING_LANE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "7 to 8, 1"
+        ],
+        "to": "7-8, 1"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_PLATFORM_VERSION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "SEQUENCING_PLATFORM_VERSION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "version  2500"
+        ],
+        "to": "2500"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_RUN_TYPE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "SEQUENCING_RUN_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "multiplex paired end (2x50 bp, 7 bp Index)"
+        ],
+        "to": "multiplex paired end (2x53 bp, 7 bp Index)"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column TECHNICAL_REPLICATE_ID",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "TECHNICAL_REPLICATE_ID",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NO"
+        ],
+        "to": "no technical replicate"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_SONICATION_FRAGMENT_SIZE_RANGE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "EXTRACTION_PROTOCOL_SONICATION_FRAGMENT_SIZE_RANGE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "150-400bp"
+        ],
+        "to": "150-400 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_SONICATION_FRAGMENT_SIZE_RANGE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "EXTRACTION_PROTOCOL_SONICATION_FRAGMENT_SIZE_RANGE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "150-500"
+        ],
+        "to": "150-500 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "10000000"
+        ],
+        "to": "1,000,0000 cells"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2,000,000cells"
+        ],
+        "to": "2,000,000 cells"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0,5ng"
+        ],
+        "to": "0,5 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1,2ng"
+        ],
+        "to": "1,2 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1,4ng"
+        ],
+        "to": "1,4 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1ng"
+        ],
+        "to": "1 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2ng"
+        ],
+        "to": "2 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1000000"
+        ],
+        "to": "1000000 cells"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1440000"
+        ],
+        "to": "1440000 cells"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_SONICATION_CYCLES",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "EXTRACTION_PROTOCOL_SONICATION_CYCLES",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Duty Cycle: 5, Peak Incident Power: 140 , Cycles per Burst: 200 , Processing Time: 12 min"
+        ],
+        "to": "Duty Cycle: 5 , Peak Incident Power: 140  , Cycles per Burst: 200 , Processing Time: 12 min"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_NUMBER_CYCLES",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_NUMBER_CYCLES",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "11 cycles"
+        ],
+        "to": "11"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "300"
+        ],
+        "to": "300 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "200bp-1000bp"
+        ],
+        "to": "200 bp-1000 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Prior to PCR not meassured, Starting amount for library preparation: < 2.5 ng fragmented IP DNA"
+        ],
+        "to": "Prior to PCR not measured, Starting amount for library preparation: < 2.5 ng fragmented IP DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Prior to PCR not meassured, Starting amount for library preparation: <2,5 ng fragmented IP DNA"
+        ],
+        "to": "Prior to PCR not measured, Starting amount for library preparation: < 2.5 ng fragmented IP DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Prior to PCR not meassured, Starting amount for library preparation: 2,5 ng fragmented IP DNA"
+        ],
+        "to": "Prior to PCR not meassured, Starting amount for library preparation: 2.5 ng fragmented IP DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_PERC_CH2O_CROSSLINKING",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CHIP_PROTOCOL_PERC_CH2O_CROSSLINKING",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1%"
+        ],
+        "to": "1% formaldehyde"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2,78ng"
+        ],
+        "to": "2,78 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CHIP_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Auto Histone ChIP Kit (Diagenode). Single reaction. Indirect method. ChIP_16_IPure_200_1: 13 hrs antibody incubation, 4 hrs beads incubation, 5 min washes. Decrosslink + RNase/Proteinase K treatment 30 min 37 degrees + 4 hrs 65 degrees. Purification with Qiagen MinElute kit"
+        ],
+        "to": "Auto Histone ChIP Kit (Diagenode). Single reaction. Indirect method.ChIP_16_IPure_200_1: 13 hrs antibody incubation, 4 hrs beads incubation, 5 min washes. Decrosslink + RNase/Proteinase K treatment 30 min 37 degrees + 4 hrs 65 degrees. Purification with Qiagen MinElute kit"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CHIP_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Auto Histone ChIP Kit (Diagenode). Indirect method. ChIP_16_IPure_200: 13 hrs antibody incubation, 4 hrs beads incubation, 5 min washes. Decrosslink + RNase/Proteinase K treatment 30 min 37 degrees + 4 hrs 65 degrees. Purification with Qiagen MinElute kit"
+        ],
+        "to": "Auto Histone ChIP Kit (Diagenode). Single reaction. Indirect method.ChIP_16_IPure_200_1: 13 hrs antibody incubation, 4 hrs beads incubation, 5 min washes. Decrosslink + RNase/Proteinase K treatment 30 min 37 degrees + 4 hrs 65 degrees. Purification with Qiagen MinElute kit"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Prior to PCR not measured, Starting amount for library preparation: 10 ng fragmented IP DNA"
+        ],
+        "to": "Prior to PCR not meassured, Starting amount for library preparation: 10 ng fragmented IP DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_PLATFORM",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "SEQUENCING_PLATFORM",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Illumina HiSeq"
+        ],
+        "to": "Illumina HiSeq 2500"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "12000000"
+        ],
+        "to": "12,000,000 cells"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "6000000"
+        ],
+        "to": "6,000,000 cells"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "3,13ng"
+        ],
+        "to": "3,13 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "3,8ng"
+        ],
+        "to": "3,8 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2160000"
+        ],
+        "to": "2160000 cells"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "390"
+        ],
+        "to": "390 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "460"
+        ],
+        "to": "460 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "550"
+        ],
+        "to": "550 bp"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1,5ng"
+        ],
+        "to": "1,5 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "3ng"
+        ],
+        "to": "3 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_PLATFORM_VERSION",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "SEQUENCING_PLATFORM_VERSION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2500"
+        ],
+        "to": "Illumina HiSeq 2500"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CONTACT_LAB",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CONTACT_LAB",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Philip Rosenstiel0"
+        ],
+        "to": "Philip Rosenstiel"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5' ATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT"
+        ],
+        "to": "5'ATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5'-AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT"
+        ],
+        "to": "5'AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CONTACT_PERSON",
+    "engineConfig": {
+      "mode": "row-based",
+      "facets": []
+    },
+    "columnName": "CONTACT_PERSON",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Christopher Schröder, christopher.schroeder@tu-dortmund.de"
+        ],
+        "to": "Christopher Schroeder, christopher.schroeder@tu-dortmund.de"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column BIOMATERIAL_PROVIDER",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BIOMATERIAL_PROVIDER",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Birgit Sawitzki, Stephan Schlickeiser, Charite; Julia Polansky-Biskup, Alf Hamann, DRFZ"
+        ],
+        "to": "Birgit Sawitzki, Stephan Schlickeiser, Charité; Julia Polansky-Biskup, Alf Hamann, DRFZ"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column BIOMATERIAL_PROVIDER",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BIOMATERIAL_PROVIDER",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dong, Chang, Radbruch, DRFZ, Julia Polansky-Biskup, Alf Hamann, DRFZ"
+        ],
+        "to": "Dong, Chang, Radbruch, DRFZ; Julia Polansky-Biskup, Alf Hamann, DRFZ"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column BIOMATERIAL_PROVIDER",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BIOMATERIAL_PROVIDER",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Dong, Chang, Radbruch, DRFZ; Julia Polansky-Biskup, Alf Hamann, DRFZ"
+        ],
+        "to": "Dong/Chang/Radbruch, Julia Polansky-Biskup, Alf Hamann, DRFZ"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column BIOMATERIAL_PROVIDER",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "BIOMATERIAL_PROVIDER",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Pharmazeutische Biologie, UDS, Saarbrücken / IfADo, Dortmund"
+        ],
+        "to": "Pharmazeutische Biologie, UDS, Saarbruecken / IfADo, Dortmund"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ORGANISM",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ORGANISM",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "mus musculus"
+        ],
+        "to": "Mus musculus"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column STRAIN",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "STRAIN",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DBA/2J / C57BL/6J (LT2+/p62+)"
+        ],
+        "to": "DBA/2J / C57BL/6J (LT2+/p62-)"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CELL_TYPE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CELL_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "CD4-positive, alpha-beta memory T cell"
+        ],
+        "to": "CD4-positive alpha-beta memory T cell"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CELL_TYPE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CELL_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "naive CD4-positive T cell"
+        ],
+        "to": "Naive CD4-positive T cell"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column TISSUE_TYPE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TISSUE_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Blood"
+        ],
+        "to": "blood"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CONTACT_LAB",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CONTACT_LAB",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Philip Rosentiel"
+        ],
+        "to": "Philip Rosenstiel"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXPERIMENT_TYPE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXPERIMENT_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DNAse"
+        ],
+        "to": "DNase"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXPERIMENT_TYPE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXPERIMENT_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "small rna-seq"
+        ],
+        "to": "small RNA-Seq"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXPERIMENT_TYPE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXPERIMENT_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "StrandedmRNA-seq"
+        ],
+        "to": "Stranded mRNA-seq"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0.5 * 10^6"
+        ],
+        "to": "0.5x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0.65 * 10^6"
+        ],
+        "to": "0.65x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0.7 * 10^6"
+        ],
+        "to": "0.7x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1 * 10^6"
+        ],
+        "to": "1x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1,000,0000 cells"
+        ],
+        "to": "1x10^7"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1.45 * 10^6"
+        ],
+        "to": "1.45x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1.8 * 10^6"
+        ],
+        "to": "1.8x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "10 * 10^6"
+        ],
+        "to": "10x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1x10^7"
+        ],
+        "to": "10x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1000000"
+        ],
+        "to": "1x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "12,000,000 cells"
+        ],
+        "to": "12x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1700000"
+        ],
+        "to": "1.7x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1E+006"
+        ],
+        "to": "1x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1E+06"
+        ],
+        "to": "1x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2 * 10^6"
+        ],
+        "to": "2x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2,000,000 cells"
+        ],
+        "to": "2x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2.3 * 10^6"
+        ],
+        "to": "2.3x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2250000"
+        ],
+        "to": "2.25x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2300000"
+        ],
+        "to": "2.3x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2355200"
+        ],
+        "to": "23.552x10^5"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "3,000,000 cells"
+        ],
+        "to": "3x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "3,500,000 cells"
+        ],
+        "to": "3.5x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "3036000"
+        ],
+        "to": "30.36x10^5"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "3700000"
+        ],
+        "to": "3.7x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "4.40E+007"
+        ],
+        "to": "4.4x10^7"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "44x10e6"
+        ],
+        "to": "44x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "4.4x10^7"
+        ],
+        "to": "44x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "44x10e6 CD4"
+        ],
+        "to": "44x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "44x10e6 CD4+ cells"
+        ],
+        "to": "44x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5 * 10^6"
+        ],
+        "to": "5x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "500000"
+        ],
+        "to": "0.5x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5E7"
+        ],
+        "to": "50x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5x10e7"
+        ],
+        "to": "50x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "6,000,000 cells"
+        ],
+        "to": "6x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "6.75E+007"
+        ],
+        "to": "67.5x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "6.75x10e7"
+        ],
+        "to": "67.5x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "7.4E+06"
+        ],
+        "to": "7.4x10^6"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "880000"
+        ],
+        "to": "8.8x10^5"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_STARTING_NR_CELLS",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "8E8"
+        ],
+        "to": "8x10^8"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_cDNA_FRAGMENTATION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_cDNA_FRAGMENTATION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Full-length cDNA was sheared using fragmentation mix from TruSeq kit, 8' at 94 deg C"
+        ],
+        "to": "Full-length cDNA was sheared using fragmentation mix from TruSeq kit, 8 min at 94°C"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_cDNA_FRAGMENTATION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_cDNA_FRAGMENTATION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Full-length cDNA was sheared using fragmentation mix from TruSeq kit, 8' at 94°C"
+        ],
+        "to": "Full-length cDNA was sheared using fragmentation mix from TruSeq kit, 8 min at 94°C"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_cDNA_FRAGMENTATION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_cDNA_FRAGMENTATION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Full-length cDNA was sheared using fragmentation mix from TruSeq kit, 8' at 94degC"
+        ],
+        "to": "Full-length cDNA was sheared using fragmentation mix from TruSeq kit, 8 min at 94°C"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_cDNA_FRAGMENTATION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_cDNA_FRAGMENTATION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Full-length cDNA was sheared using fragmentation mix from TruSeq kit, 8min at 94°C"
+        ],
+        "to": "Full-length cDNA was sheared using fragmentation mix from TruSeq kit, 8 min at 94°C"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0,8ug total RNA"
+        ],
+        "to": "0,8 ug total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1,1ng"
+        ],
+        "to": "1,1 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1 ug total RNA"
+        ],
+        "to": "1 µg total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0,8 ug total RNA"
+        ],
+        "to": "0,8 µg total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1,7ng"
+        ],
+        "to": "1,7 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1010ng total RNA"
+        ],
+        "to": "1010 ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1ug total RNA"
+        ],
+        "to": "1 µg total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1µg total RNA"
+        ],
+        "to": "1 µg total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2,3ng"
+        ],
+        "to": "2,3 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2000ng total RNA (by accident)"
+        ],
+        "to": "2000 ng total RNA (by accident)"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "238ng total RNA"
+        ],
+        "to": "238 ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "250ng total RNA"
+        ],
+        "to": "250 ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "3,3ng"
+        ],
+        "to": "3,3 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "500ng"
+        ],
+        "to": "500 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "500ng total RNA"
+        ],
+        "to": "500 ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5ng"
+        ],
+        "to": "5 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "660ng total RNA"
+        ],
+        "to": "660 ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_INITIAL_INPUT_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "800ng total RNA"
+        ],
+        "to": "800 ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5' AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT"
+        ],
+        "to": "5'-AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5' GUUCAGAGUUCUACAGUCCGACGAUC"
+        ],
+        "to": "5'-GUUCAGAGUUCUACAGUCCGACGAUC"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5'AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT"
+        ],
+        "to": "5'-AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5'ATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT"
+        ],
+        "to": "5'-ATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5'GUUCAGAGUUCUACAGUCCGACGAUC"
+        ],
+        "to": "5'-GUUCAGAGUUCUACAGUCCGACGAUC"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5´-AAT GAT ACG GCG ACC ACC GAG ATC TAC ACT CTT TCC CTA CAC GAC GCT CTT CCG ATC*T-3´"
+        ],
+        "to": "5'-AAT GAT ACG GCG ACC ACC GAG ATC TAC ACT CTT TCC CTA CAC GAC GCT CTT CCG ATC*T-3'"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NEBNext Universal PCR Primer for Illumina (NEB, E7335) 5´-AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATC*T-3´"
+        ],
+        "to": "NEBNext Universal PCR Primer for Illumina (NEB, E7335) 5'-AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATC*T-3'"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NEBNext Universal PCR Primer for Illumina (NEB, E7335) 5'-AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATC*T-3'"
+        ],
+        "to": "NEBNext Universal PCR Primer for Illumina (NEB, E7335); 5'-AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATC*T-3'"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NEBNext Universal PCR Primer for Illumina (NEB, E7335); 5´-AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATC*T-3´"
+        ],
+        "to": "NEBNext Universal PCR Primer for Illumina (NEB, E7335); 5'-AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATC*T-3'"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Universal PCR Primer for Illumina 5´-AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATC*T-3´"
+        ],
+        "to": "Universal PCR Primer for Illumina 5'-AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATC*T-3'"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_F_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Universal PCR Primer for Illumina 5«-AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATC*T-3«"
+        ],
+        "to": "Universal PCR Primer for Illumina 5'-AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATC*T-3'"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_POLYMERASE_TYPE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_POLYMERASE_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "From mastermix of TruSeq smallRNA kit"
+        ],
+        "to": "From mastermix of TruSeq stranded mRNA kit"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_POLYMERASE_TYPE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_POLYMERASE_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Q5 High-Fidelity DNA Polymerase"
+        ],
+        "to": "Q5 ® High-Fidelity DNA Polymerase"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_POLYMERASE_TYPE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_POLYMERASE_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HotStart Taq (Qiagen)"
+        ],
+        "to": "Qiagen HotStar Taq"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_POLYMERASE_TYPE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_POLYMERASE_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "HotStarTaq"
+        ],
+        "to": "Qiagen HotStar Taq"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRIMER_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRIMER_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1 ul of NEBNext Singleplex index primer"
+        ],
+        "to": "1 µl of NEBNext Singleplex index primer"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRIMER_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRIMER_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5 ul of PPC"
+        ],
+        "to": "5 µl of PPC"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_ISOLATION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "4ng"
+        ],
+        "to": "4 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "200 bp-1000 bp"
+        ],
+        "to": "200-1000"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "200bp-600bp"
+        ],
+        "to": "200-600"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "200bp-700bp"
+        ],
+        "to": "200-700"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "264 bp"
+        ],
+        "to": "264"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "300 bp"
+        ],
+        "to": "300"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "340 bp"
+        ],
+        "to": "340"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "350 bp"
+        ],
+        "to": "350"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "380 bp"
+        ],
+        "to": "380"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "390 bp"
+        ],
+        "to": "390"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "400 bp"
+        ],
+        "to": "400"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "450 bp"
+        ],
+        "to": "450"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "460 bp"
+        ],
+        "to": "460"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "550 bp"
+        ],
+        "to": "550"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "137 bp"
+        ],
+        "to": "137"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "140 bp"
+        ],
+        "to": "140"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "140bp"
+        ],
+        "to": "140"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "143 bp"
+        ],
+        "to": "143"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "143bp"
+        ],
+        "to": "143"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "144 bp"
+        ],
+        "to": "144"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "144bp"
+        ],
+        "to": "144"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "145 bp"
+        ],
+        "to": "145"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "145bp"
+        ],
+        "to": "145"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "146 bp"
+        ],
+        "to": "146"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "147 bp"
+        ],
+        "to": "147"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "147bp"
+        ],
+        "to": "147"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "150bp"
+        ],
+        "to": "150"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_PRODUCT_LENGTH",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "153bp"
+        ],
+        "to": "153"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1 ug total RNA"
+        ],
+        "to": "1 µg total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0,8ug total RNA"
+        ],
+        "to": "0,8 µg total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "10 ng/ul"
+        ],
+        "to": "10 ng/µl"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "13.7 ng/ul"
+        ],
+        "to": "13.7 ng/µl"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "14.63 ng/ul"
+        ],
+        "to": "14.63 ng/µl"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "15.5 ng/ul"
+        ],
+        "to": "15.5 ng/µl"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "170 ngtotal RNA"
+        ],
+        "to": "170 ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1µg total RNA"
+        ],
+        "to": "1 µg total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2000ng total RNA (by accident)"
+        ],
+        "to": "2000 ng total RNA (by accident)"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "25 ng/ul"
+        ],
+        "to": "25 ng/µl"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "250ng total RNA"
+        ],
+        "to": "250 ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2ng"
+        ],
+        "to": "2 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "4ng"
+        ],
+        "to": "4 ng"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "800ng total RNA"
+        ],
+        "to": "800 ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Prior to PCR not meassured, Starting amount for library preparation: < 2,5 ng fragmented IP DNA"
+        ],
+        "to": "Prior to PCR not meassured, Starting amount for library preparation: <2.5 ng fragmented IP DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Prior to PCR not meassured, Starting amount for library preparation: 11,9 ng fragmented IP DNA"
+        ],
+        "to": "Prior to PCR not meassured, Starting amount for library preparation: 11.9 ng fragmented IP DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Prior to PCR not meassured, Starting amount for library preparation: 3,13 ng fragmented IP DNA"
+        ],
+        "to": "Prior to PCR not meassured, Starting amount for library preparation: 3.13 ng fragmented IP DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Prior to PCR not meassured, Starting amount for library preparation: 3,4 ng fragmented IP DNA"
+        ],
+        "to": "Prior to PCR not meassured, Starting amount for library preparation: 3.4 ng fragmented IP DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Prior to PCR not meassured, Starting amount for library preparation: 4,33 ng fragmented IP DNA"
+        ],
+        "to": "Prior to PCR not meassured, Starting amount for library preparation: 4.33 ng fragmented IP DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Prior to PCR not meassured, Starting amount for library preparation: 7,1 ng fragmented IP DNA"
+        ],
+        "to": "Prior to PCR not meassured, Starting amount for library preparation: 7.1 ng fragmented IP DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Prior to PCR not meassured, Starting amount for library preparation: 9,3 ng fragmented IP DNA"
+        ],
+        "to": "Prior to PCR not meassured, Starting amount for library preparation: 9.3 ng fragmented IP DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Prior to PCR not meassured, Starting amount for library preparation: <2.5 ng fragmented IP DNA"
+        ],
+        "to": "Prior to PCR not meassured, Starting amount for library preparation: < 2.5 ng fragmented IP DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Prior to PCR not measured, Starting amount for library preparation: < 2.5 ng fragmented IP DNA"
+        ],
+        "to": "Prior to PCR not meassured, Starting amount for library preparation: < 2.5 ng fragmented IP DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Prior to PCR not measured, Starting amount for library preparation: <2.5 ng fragmented IP DNA"
+        ],
+        "to": "Prior to PCR not meassured, Starting amount for library preparation: < 2.5 ng fragmented IP DNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_TEMPLATE_CONC",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "500ng total RNA"
+        ],
+        "to": "500 ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_PCR_THERMOCYCLING_PROGRAM",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_PCR_THERMOCYCLING_PROGRAM",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "15m @ 95C, 9*(30s @ 95C, 30s @ 60C, 1m @ 72C), 7m @ 72C, hold at 4C"
+        ],
+        "to": "15m @ 95C, 9*(30s @ 95°C, 30s @ 60°C, 1m @ 72°C), 7m @ 72°C, hold at 4°C"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0,8ug total RNA"
+        ],
+        "to": "0,8 ug total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0,8 ug total RNA"
+        ],
+        "to": "0,8 µg total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1 ug total RNA"
+        ],
+        "to": "1 µg total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "170 ngtotal RNA"
+        ],
+        "to": "170 ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1ug total RNA"
+        ],
+        "to": "1 ug total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1µg total RNA"
+        ],
+        "to": "1 µg total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2000ng total RNA (by accident)"
+        ],
+        "to": "2000 ng total RNA (by accident)"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "250ng total RNA"
+        ],
+        "to": "250 ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "500ng total RNA"
+        ],
+        "to": "500 ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_cDNA_PREPARATION_INITIAL_RNA_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1 ug total RNA"
+        ],
+        "to": "1 µg total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_cDNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_cDNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "16° for 1h"
+        ],
+        "to": "16°C for 1h"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_cDNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_cDNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "16ﾂｰC for 1h"
+        ],
+        "to": "16°C for 1h"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_cDNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_cDNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "50degC for 1h"
+        ],
+        "to": "16°C for 1h"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_EXTRACTION_PROTOCOL",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_EXTRACTION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Trizol (Life Technoligies Cat. No. 15596-018)"
+        ],
+        "to": "Trizol (Life Technologies Cat. No. 15596-018)"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_EXTRACTION_PROTOCOL",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_EXTRACTION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Trizol(Life Technoligies Cat. No. 15596-018)"
+        ],
+        "to": "Trizol (Life Technologies Cat. No. 15596-018)"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_3'_RNA_ADAPTER_LIGATION_PROTOCOL",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_3'_RNA_ADAPTER_LIGATION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq smallRNA protocol"
+        ],
+        "to": "according to Illumina TruSeq small RNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_3'_RNA_ADAPTER_SEQUENCE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_3'_RNA_ADAPTER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq smallRNA protocol"
+        ],
+        "to": "according to Illumina TruSeq small RNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_3'_RNA_ADAPTER_SEQUENCE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_3'_RNA_ADAPTER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq stranded smallRNA protocol"
+        ],
+        "to": "according to Illumina TruSeq stranded small RNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_5'_DEPHOSPHORYLATION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_5'_DEPHOSPHORYLATION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq smallRNA protocol"
+        ],
+        "to": "according to Illumina TruSeq small RNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_5'_DEPHOSPHORYLATION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_5'_DEPHOSPHORYLATION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq stranded smallRNA protocol"
+        ],
+        "to": "according to Illumina TruSeq stranded small RNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_5'_PHOSPHORYLATION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_5'_PHOSPHORYLATION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq smallRNA protocol"
+        ],
+        "to": "according to Illumina TruSeq small RNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_5'_PHOSPHORYLATION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_5'_PHOSPHORYLATION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq stranded smallRNA protocol"
+        ],
+        "to": "according to Illumina TruSeq stranded small RNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_5'_RNA_ADAPTER_LIGATION_PROTOCOL",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_5'_RNA_ADAPTER_LIGATION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq smallRNA protocol"
+        ],
+        "to": "according to Illumina TruSeq small RNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_5'_RNA_ADAPTER_LIGATION_PROTOCOL",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_5'_RNA_ADAPTER_LIGATION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq stranded smallRNA protocol"
+        ],
+        "to": "according to Illumina TruSeq stranded small RNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_5'_RNA_ADAPTER_SEQUENCE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_5'_RNA_ADAPTER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq smallRNA protocol"
+        ],
+        "to": "according to Illumina TruSeq small RNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_5'_RNA_ADAPTER_SEQUENCE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_5'_RNA_ADAPTER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq stranded smallRNA protocol"
+        ],
+        "to": "according to Illumina TruSeq stranded small RNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_INITIAL_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_INITIAL_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1 ug total RNA"
+        ],
+        "to": "1 µg total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_INITIAL_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_INITIAL_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0,8ug total RNA"
+        ],
+        "to": "0,8 µg total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_INITIAL_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_INITIAL_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "170 ngtotal RNA"
+        ],
+        "to": "170 ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_INITIAL_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_INITIAL_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1ug total RNA"
+        ],
+        "to": "1 µg total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_INITIAL_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_INITIAL_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1µg total RNA"
+        ],
+        "to": "1 µg total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_INITIAL_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_INITIAL_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "2000ng total RNA (by accident)"
+        ],
+        "to": "2000 ng total RNA (by accident)"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_INITIAL_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_INITIAL_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "250ng total RNA"
+        ],
+        "to": "250 ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_INITIAL_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_INITIAL_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "500ng total RNA"
+        ],
+        "to": "500 ng total RNA"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_REVERSE_TRANSCRIPTION_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_REVERSE_TRANSCRIPTION_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq smallRNA protocol"
+        ],
+        "to": "according to Illumina TruSeq small RNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_REVERSE_TRANSCRIPTION_PRIMER_SEQUENCE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_REVERSE_TRANSCRIPTION_PRIMER_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq stranded smallRNA protocol"
+        ],
+        "to": "according to Illumina TruSeq stranded small RNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq smallRNA protocol"
+        ],
+        "to": "according to Illumina TruSeq small RNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column RNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "RNA_PREPARATION_REVERSE_TRANSCRIPTION_PROTOCOL",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "according to Illumina TruSeq stranded smallRNA protocol"
+        ],
+        "to": "according to Illumina TruSeq stranded small RNA protocol"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_CONTROL_SOFTWARE_VERSION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SEQUENCING_CONTROL_SOFTWARE_VERSION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Control Software 2.0.2 / RTA 2.4.11 / Recipe Fragment 2.0.0.2"
+        ],
+        "to": "Control Software 2.0.2 / RTA 2.4.11 / Recipe Fragment 2.0.0.2​"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_CYCLES",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SEQUENCING_CYCLES",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "51 bp"
+        ],
+        "to": "51"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_PE_TYPE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SEQUENCING_PE_TYPE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "PAIRED END"
+        ],
+        "to": "paired end"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_PROCESSING_SOFTWARE_VERSION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SEQUENCING_PROCESSING_SOFTWARE_VERSION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "bcl2fastq v2.17.1.14"
+        ],
+        "to": "bcl2fastq 2.17.1.14"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_PROCESSING_SOFTWARE_VERSION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SEQUENCING_PROCESSING_SOFTWARE_VERSION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "bcl2fastq_v1.8.2"
+        ],
+        "to": "bcl2fastq v1.8.2"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_PROCESSING_SOFTWARE_VERSION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SEQUENCING_PROCESSING_SOFTWARE_VERSION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "bcl2fastq_v1.8.4"
+        ],
+        "to": "bcl2fastq v1.8.4"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column SEQUENCING_PROCESSING_SOFTWARE_VERSION",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "SEQUENCING_PROCESSING_SOFTWARE_VERSION",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "bcl2fastq-1.8.4"
+        ],
+        "to": "bcl2fastq 1.8.4"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ChromatinAccessibility_ENZYME_AMOUNT",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ChromatinAccessibility_ENZYME_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "20 U"
+        ],
+        "to": "20 U/ml"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ChromatinAccessibility_ENZYME_AMOUNT",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ChromatinAccessibility_ENZYME_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "60 U"
+        ],
+        "to": "60 U/ml"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ChromatinAccessibility_ENZYME_AMOUNT",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ChromatinAccessibility_ENZYME_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "80 U"
+        ],
+        "to": "80 U/ml"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column ChromatinAccessibility_METHOD",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "ChromatinAccessibility_METHOD",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "DNAse"
+        ],
+        "to": "DNase"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_SONICATION_FRAGMENT_SIZE_RANGE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_SONICATION_FRAGMENT_SIZE_RANGE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "150-400 bp"
+        ],
+        "to": "150-400"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column EXTRACTION_PROTOCOL_SONICATION_FRAGMENT_SIZE_RANGE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "EXTRACTION_PROTOCOL_SONICATION_FRAGMENT_SIZE_RANGE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "150-500 bp"
+        ],
+        "to": "150-500"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column LIBRARY_GENERATION_ADAPTOR_SEQUENCE",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LIBRARY_GENERATION_ADAPTOR_SEQUENCE",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "5' AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT---Insert----- AGATCGGAAGAGCACACGTCTGAACTCCAGTCACNNNNNNATCTCGTATGCCGTCTTCTGCTTG"
+        ],
+        "to": "5' AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT---Insert----- AGATCGGAAGAGCACACGTCTGAACTCCAGTCACNNNNNNATCTCGTATGCCGTCTTCTGCTTG 3'"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_ANTIBODY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CHIP_ANTIBODY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "no Ab"
+        ],
+        "to": "no ab"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_ANTIBODY_CATALOG",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CHIP_ANTIBODY_CATALOG",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "no Ab"
+        ],
+        "to": "no ab"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_ANTIBODY_LOT",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CHIP_ANTIBODY_LOT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "no Ab"
+        ],
+        "to": "no ab"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_ANTIBODY_PROVIDER",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CHIP_ANTIBODY_PROVIDER",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "no Ab"
+        ],
+        "to": "no ab"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_BEAD_AMOUNT",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CHIP_PROTOCOL_BEAD_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "15 micro l"
+        ],
+        "to": "15 µl"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0.01 microg"
+        ],
+        "to": "0.01 µg"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0.013 microg"
+        ],
+        "to": "0.013 µg"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0.030 microg"
+        ],
+        "to": "0.030 µg"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0.046 microg"
+        ],
+        "to": "0.046 µg"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0.2 micro g"
+        ],
+        "to": "0.2 µg"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CHIP_PROTOCOL_CHROMATIN_AMOUNT",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1.3 microg"
+        ],
+        "to": "1.3 µg"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_SHEARING_CYCLES",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CHIP_PROTOCOL_SHEARING_CYCLES",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "3 x 10cycles of 30 seconds ON, 30 seconds OFF"
+        ],
+        "to": "3 x 10 cycles of 30 seconds ON, 30 seconds OFF"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_SHEARING_CYCLES",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CHIP_PROTOCOL_SHEARING_CYCLES",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "3 x10 cycles of 30 seconds ON, 30 seconds OFF"
+        ],
+        "to": "3 x 10 cycles of 30 seconds ON, 30 seconds OFF"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column CHIP_PROTOCOL_SHEARING_FREQUENCY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CHIP_PROTOCOL_SHEARING_FREQUENCY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "30''on / 30'' off"
+        ],
+        "to": "30'' on / 30'' off"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DNA_PREPARATION_INITIAL_DNA_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DNA_PREPARATION_INITIAL_DNA_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0.099 ng/microl"
+        ],
+        "to": "0.099 ng/µl"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DNA_PREPARATION_INITIAL_DNA_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DNA_PREPARATION_INITIAL_DNA_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0.297 ng/microl"
+        ],
+        "to": "0.297 ng/µl"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DNA_PREPARATION_INITIAL_DNA_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DNA_PREPARATION_INITIAL_DNA_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "0.462 ng/microl"
+        ],
+        "to": "0.462 ng/µl"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DNA_PREPARATION_INITIAL_DNA_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DNA_PREPARATION_INITIAL_DNA_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "1.65 ng/micro l"
+        ],
+        "to": "1.65 ng/µl"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column DNA_PREPARATION_INITIAL_DNA_QNTY",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DNA_PREPARATION_INITIAL_DNA_QNTY",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "13.2 ng/microl"
+        ],
+        "to": "13.2 ng/µl"
+      }
+    ]
+  }
+]

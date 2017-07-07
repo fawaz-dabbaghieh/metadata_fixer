@@ -12,7 +12,8 @@ import sys
 import re
 import os
 import codecs
-from dictionary_functions import *		#an acompanied python file with functions needed to process the files
+from dictionary_functions import *		#an acompanied python file with functions
+from dicttoxml import dicttoxml
 
 def strip(x): return x.strip()
 def encode(x): return x.encode("utf-8")
@@ -31,7 +32,7 @@ parser.add_option("-l","--list",dest="list_file",help="name or path to a file, c
 
 parser.add_option("-d","--directory",dest="dir_path",help="name or path of the directory containing files to be processed", metavar="PATH")
 
-parser.add_option("-v","--verbose",dest="verbose",action="store_true", default=False,help="To turn on Verbose")
+parser.add_option("-v","--verbose",dest="verbose",action="store_true", default=False,help="To turn the Verbose mode on")
 
 parser.add_option("-k","--key", dest="key", help="Shows the accepted values for the key given by user",metavar="KEY")
 
@@ -47,41 +48,42 @@ verbose = options.verbose
 key_from_user = options.key
 
 
-#loading the dictionaries, we have 3 dictionaries, one for experiments metadata, one for samples and one for the regular expression to check for
-#So I made a dict of dicts to have all three and work with them and be able to call them
-#TODO change the way the dictionaries are read
+
+"""
+
+Loading dictionaries, we have 3 dictionaries (experiments, samples and regular expressions), the first two are made by running the build_dictionary.py first to build dictionaries from a set of files, the regular expression dictionary is "hard coded" according to the keys that we agreed that have to be checked for regular expression, all dictionaries are in .tsv format and can be opened and editted easily, so new keys and value can be added to these dictionaries.
+
+"""
+
 dictionaries = {"samples_dictionary": {}, "experiments_dictionary": {},"regex_dictionary": {}}
 
 for k in dictionaries.keys():
     if os.path.exists(k + ".tsv"):
         dictionaries[k] = read_dictionary(k + ".tsv")
     else:
-        print("Was not able to load the ({})".format(k))
-    
-    
-#for idx, l in enumerate(dictionaries):
-	#if os.path.exists(l):
-		#f = open(l, "r")
-		#dictionaries[idx] = pickle.load(f)
-		#f.close()
-	#else:
-		#print("The dictionary file has either not been built or it is not in this directory")
-		#sys.exit()
+        print("The ({}) dictionary was not loaded".format(k))
+
 
 
 #checking the file from option -f --file
 if filename is not None:
     if os.path.exists(filename):
         if verbose == True:
-            check_vobac_verbose(filename, dictionaries)
+            report_dict = {}
+            report = check_vocab_verbose(filename, dictionaries, report_dict)
+            
         else:
 
-            check_vocab(filename, dictionary)
+            report = check_vocab(filename, dictionaries)
     else:
-            print("the path ({}) you gave is not correct, please check it again".format(options.filename))
+            print("the path ({}) you gave was not found, please check it again".format(options.filename))
             sys.exit()
-
-
+            
+    report_xml = dicttoxml(report, custom_root = "filesCheckReport", attr_type = False)
+    w = open("report.xml", "w+")
+    w.write(report_xml)
+    w.close()
+    
 
 #checking the file from option -l --list
 if list_file is not None:
@@ -89,19 +91,22 @@ if list_file is not None:
         files = read_files(list_file)
         files = map(strip,files)
         
+        report_dict = {}
         for f in files:
             if verbose == True:	#for verbose
-                print f + "\n"
-                check_vobac_verbose(f, dictionaries)
+                report_dict = check_vocab_verbose(f, dictionaries, report_dict)
 
             else:	#for not verbose
-                print f + "\n"
-                chech_vocab(f, dictionaries)
+                report_dict = chech_vocab(f, dictionaries, report_dict)
 
     else:
         print("the path ({}) you gave for a list of files is not correct, please check it again".format(list_file))
         sys.exit()
-
+        
+    report_xml = dicttoxml(report_dict, custom_root = "filesCheckReport", attr_type = False)
+    w = open("report.xml", "w+")
+    w.write(report_xml)
+    w.close()
 
 #checking the file from option -d --directory
 if dir_path is not None:
@@ -115,21 +120,24 @@ if dir_path is not None:
                 if f.endswith("emd.tsv") or f.endswith("smd.txt"):
                     data_files.append(os.path.join(root, f))
 
+        report_dict = {}
         for f in data_files:
             lines = read_files(f)
             lines = map(strip,lines)
             lines = map(encode, lines)
             if verbose == True:
-                print f + "\n"
-                check_vocab_verbose(f, dictionaries)
+                report_dict = check_vocab_verbose(f, dictionaries,report_dict)
 
             else:
-                print f + "\n"
-                check_vocab(f, dictionaries)
+                report_dict = check_vocab(f, dictionaries,report_dict)
 
     else:
         print("the path ({}) you gave is not correct, please check it again".format(dir_path))	
 
+    report_xml = dicttoxml(report_dict, custom_root = "filesCheckReport", attr_type = False)
+    w = open("report.xml", "w+")
+    w.write(report_xml)
+    w.close()
 
 #checking the file from option -k --key
 if key_from_user is not None:

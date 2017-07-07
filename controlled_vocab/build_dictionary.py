@@ -34,7 +34,7 @@ if not directory.endswith("/"):		#adding a slash to the directory name in case i
 if os.path.exists(directory):
     experiment_data_files = []
     sample_data_files = []
-    for root, dirs, files in os.walk(directory):    #Checking the directory and sub direcotory recursively and make a list of files
+    for root, dirs, files in os.walk(directory):    #Checking the directory and sub directory recursively and make a list of files
         for f in files:
             if f.endswith("emd.tsv"):
                 experiment_data_files.append(os.path.join(root, f))      #joining the name of the file with the path
@@ -71,12 +71,10 @@ else:
 if experiment_data_files != []:             #in case there were no experient files
     experiment_keys = list_keys(experiment_data_files, regex_keys, black_keys)
     experiments_dictionary = build_dic(experiment_keys, experiment_data_files)
-    try:
-        if experiments_dictionary:
-            write_dictionary(experiments_dictionary, "experiments_dictionary.tsv")
-    except NameError:
-        print "the experiments_dictionary was not generated"
-        
+    if experiments_dictionary:
+        write_dictionary(experiments_dictionary, "experiments_dictionary.tsv")
+    else:
+        print "experiments dictionary was not built"
 else:
     print "There were no experiment data files"
 
@@ -87,11 +85,10 @@ else:
 if sample_data_files != []:             #in case there were no sample files
     sample_keys = list_keys(sample_data_files, regex_keys, black_keys)
     samples_dictionary = build_dic(sample_keys, sample_data_files)
-    try:
-        if samples_dictionary:
-            write_dictionary(samples_dictionary, "samples_dictionary.tsv")
-    except NameError:
-        print "the samples_dictionary was not generated"
+    if samples_dictionary:
+        write_dictionary(samples_dictionary, "samples_dictionary.tsv")
+    else:
+        print "samples dictionary was not built"
         
 else:
     print "There were no Sample data files"

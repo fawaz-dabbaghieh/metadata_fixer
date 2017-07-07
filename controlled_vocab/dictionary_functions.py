@@ -2,6 +2,7 @@ import os
 import codecs
 import sys
 import re
+from dicttoxml import dicttoxml
 
 def strip(x): return x.strip()
 def encode(x): return x.encode("utf-8")
@@ -30,31 +31,35 @@ def read_files(file_name):
     return lines
 
 ###########################################################################################################################
+#Making Warnings dictionary
+
+###########################################################################################################################
 #Function to check for controlled vocabluary, verbose version which will print everything (OK lines and warning lines)
-#TODO change the worning schema and store the warnings in an XML file, so it will be easier to read the report
-def check_vocab_verbose(metadata_file, dictionaries):
+def check_vocab_verbose(metadata_file, dictionaries, report_dict):
+    report_dict[metadata_file.split("/")[-1]] = {}   #A dictionary for the report, converted later to xml
+    
     lines = read_files(metadata_file)
-    lines = map(strip, lines)
-    lines = map(encode, lines)
-    lines = map(split, lines)
+    
+    lines = map(split, map(encode, map(strip, lines)))  #stripping any extra white spaces, and splitting to [key,value]
+    
     if metadata_file.endswith("emd.tsv"):
         for l in lines:
-                if l[0] in dictionaries["regex_dictionary"].keys():	#check if the key belongs to the regex then check the value if it fits the regex
-                    
-                    if re.search(dictionaries["regex_dictionary"][l[0]][0], l[1]):
-                        print "\t".join(l)
-                        print "\tAccepted"
-                    else:
-                        print("\nWarning! the value ({}) in key ({}) in file ({}) doesn't follow the accepted template").format(l[1], l[0], metadata_file)
-                        print("\nWarning! the value ({}) in key ({}) don't comply with the templte which is ({})").format(l[1], l[0], dictionaries["regex_dictionary"][l[0]][1])
-                elif l[0] in dictionaries["samples_dictionary"].keys():	#If the key is not from regex, check if it's a white list
-                    if l[1] in dictionaries["samples_dictionary"][l[0]]:
-                        print "\t".join(l)
-                        print "\tAccepted"
-                    else:
-                        print("\n Warning! the value ({}) in key ({}) in line ({}) is not in the controlled vocabulary\n\n").format(l[1], l[0], metadata_file)
-                else:					#if it's not regex nor white list then it's a balck list and can be left as it is
-                    pass
+            if l[0] in dictionaries["regex_dictionary"].keys():	#check if the key belongs to the regex then check the value if it fits the regex
+                
+                if re.search(dictionaries["regex_dictionary"][l[0]][0], l[1]):  #l[0] gives the key and the regex is the element [0] of that key l[1] is the value
+                    report_dict[metadata_file.split("/")[-1]][l[0]] = str(l[1]) + "\t(Accepted)"
+
+                else:
+                    report_dict[metadata_file.split("/")[-1]][l[0]] = "Warning! the value (" + str(l[1]) + ") doesn't follow the accepted template which is (" + str(dictionaries["regex_dictionary"][l[0]][1]) + ")"
+ 
+            elif l[0] in dictionaries["experiments_dictionary"].keys():	#If the key is not from regex, check if it's a white list
+                if l[1] in dictionaries["experiments_dictionary"][l[0]]:
+                    report_dict[metadata_file.split("/")[-1]][l[0]] = str(l[1]) + "\t(Accepted)"
+
+                else:
+                    report_dict[metadata_file.split("/")[-1]][l[0]] = "Warning! the value (" + str(l[1]) + ") is not in the controlled vocabulary"
+            else:					#if it's not regex nor white list then it's a balck list and can be left as it is
+                pass
 
 
 
@@ -62,46 +67,50 @@ def check_vocab_verbose(metadata_file, dictionaries):
         for l in lines:
             if l[0] in dictionaries["regex_dictionary"].keys():	#check if the key belongs to the regex then check the value if it fits the regex
                 if re.search(dictionaries["regex_dictionary"][l[0]][0], l[1]):
-                    print "\t".join(l)
-                    print "\tAccepted"
+                    
+                    report_dict[metadata_file.split("/")[-1]][l[0]] = str(l[1]) + "\t(Accepted)"
+
                 else:
-                    print("\nWarning! the value ({}) in key ({}) in file ({}) doesn't follow the remplate accepted").format(l[1], l[0], metadata_file)
-                    print("\nWarning! the value ({}) in key ({}) don't comply with the templte which is ({})").format(l[1], l[0], dictionaries["regex_dictionary"][l[0]][1])
+                    report_dict[metadata_file.split("/")[-1]][l[0]] = "Warning! the value (" + str(l[1]) + ") doesn't follow the accepted template which is (" + str(dictionaries["regex_dictionary"][l[0]][1]) + ")"
+
             elif l[0] in dictionaries["samples_dictionary"].keys():	#If the key is not from regex, check if it's a white list
                 if l[1] in dictionaries["samples_dictionary"][l[0]]:
-                    print "\t".join(l)
-                    print "\tAccepted"
+                    report_dict[metadata_file.split("/")[-1]][l[0]] = str(l[1]) + "\t(Accepted)"
+
                 else:
-                    print("\nWarning! the value ({}) in key ({}) in line ({}) is not in the controlled vocabulary\n\n").format(l[1], l[0], metadata_file)
+                    report_dict[metadata_file.split("/")[-1]][l[0]] = "Warning! the value (" + str(l[1]) + ") is not in the controlled vocabulary"
+
             else:					#if it's not regex nor white list then it's a balck list and can be left as it is
                 pass
 
-
+    return report_dict
 ###########################################################################################################################
 #Function to check for controlled vocabluary, only prints warning lines
-def check_vocab(metadata_file, dictionaries):
-    f = codecs.open(metadata_file, encoding = "utf-8-sig")
-    lines = f.readlines()
-    f.close()
-    lines = map(strip, lines)
-    lines = map(encode, lines)
-    lines = map(split, lines)
+def check_vocab(metadata_file, dictionaries, report_dict):
+    report_dict[metadata_file.split("/")[-1]] = {}   #A dictionary for the files messages
+
+    lines = read_files(metadata_file)
+    
+    lines = map(split, map(encode, map(strip, lines)))  #stripping any extra white spaces, and splitting to [key,value]
+    
     if metadata_file.endswith("emd.tsv"):
         for l in lines:
+            
             if l[0] in dictionaries["regex_dictionary"].keys():	#check if the key belongs to the regex then check the value if it fits the regex
                 if re.search(dictionaries["regex_dictionary"][l[0]][0], l[1]):
                     pass
                 else:
-                    print("\nWarning! the value ({}) in key ({}) in file ({}) doesn't follow the accepted template").format(l[1], l[0], metadata_file)
-                    print("\nWarning! the value ({}) in key ({}) don't comply with the templte which is ({})").format(l[1], l[0], dictionaries["regex_dictionary"][l[0]][1])
+                    report_dict[metadata_file.split("/")[-1]][l[0]] = "Warning! the value (" + str(l[1]) + ") doesn't follow the accepted template which is (" + str(dictionaries["regex_dictionary"][l[0]][1]) + ")"
+
+                    
             elif l[0] in dictionaries["experiments_dictionary"].keys():	#If the key is not from regex, check if it's a white list
                 if l[1] in dictionaries["experiments_dictionary"][l[0]]:
                     pass
                 else:
-                    print("\n Warning! the value ({}) in key ({}) in line ({}) is not in the controlled vocabulary\n\n").format(l[1], l[0], metadata_file)
+                    report_dict[metadata_file.split("/")[-1]][l[0]] = "Warning! the value (" + str(l[1]) + ") is not in the controlled vocabulary"
+                    
             else:					#if it's not regex nor white list then it's a balck list and can be left as it is
                 pass
-
 
 
     elif metadata_file.endswith("smd.txt"):
@@ -110,15 +119,18 @@ def check_vocab(metadata_file, dictionaries):
                 if re.search(dictionaries["regex_dictionary"][l[0]][0], l[1]):
                     pass
                 else:
-                    print("\nWarning! the value ({}) in key ({}) in file ({}) doesn't follow the remplate accepted").format(l[1], l[0], metadata_file)
-                    print("\nWarning! the value ({}) in key ({}) don't comply with the templte which is ({})").format(l[1], l[0], dictionaries["regex_dictionary"][l[0]][1])
+                    report_dict[metadata_file.split("/")[-1]][l[0]] = "Warning! the value (" + str(l[1]) + ") doesn't follow the accepted template which is (" + str(dictionaries["regex_dictionary"][l[0]][1]) + ")"
+
             elif l[0] in dictionaries["samples_dictionary"].keys():	#If the key is not from regex, check if it's a white list
                 if l[1] in dictionaries["samples_dictionary"][l[0]]:
                     pass
                 else:
-                    print("\nWarning! the value ({}) in key ({}) in line ({}) is not in the controlled vocabulary\n\n").format(l[1], l[0], metadata_file)
+                    report_dict[metadata_file.split("/")[-1]][l[0]] = "Warning! the value (" + str(l[1]) + ") is not in the controlled vocabulary"
+
             else:					#if it's not regex nor white list then it's a balck list and can be left as it is
                 pass
+
+    return report_dict
 
 
 ###########################################################################################################################
@@ -134,7 +146,7 @@ def build_dic(all_keys, files):
         lines = map(encode, lines)	# encode the lines as utf-8, it makes it easier for comparison later
         lines = map(split, lines)	# split each lines to ["key", "value"]
 
-        for l in lines:	#if the value is already in the dictionary do nothing, otherwise add that value to the dictionaryLiam Gallagher
+        for l in lines:	#if the value is already in the dictionary do nothing, otherwise add that value to the dictionary
             if l[0] in dic.keys():  #check if the keys of the line is one of the controlled vocabulary keys
                 if l[1] not in dic[l[0]]:   #Check if the value is in the dictionary otherwise add it
                     dic[l[0]].append(l[1])

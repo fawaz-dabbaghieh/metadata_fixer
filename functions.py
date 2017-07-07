@@ -14,9 +14,9 @@ def split(x): return x.split("\t")
 def strip(x): return x.strip()
 ############################################################################################
 #This functions will try 3 different kinds of encodings
-#once codecs reads the file in the write encoding
+#once codecs reads the file in the right encoding
 #it will be read as un-encoded lines with u'' at the beginning
-#this way when I write them back, I can encode them as utf-8
+#this way when I write them back, I can encode them as utf-8 (This way I can convert all files to utf-8)
 
 def read_files(file_name):
     encodings = ['utf-8-sig','iso-8859-1', 'utf-16']
@@ -60,7 +60,8 @@ def remove_empty_lines(lines):
 ############################################################################################
 #remove encoding error characters (after checking these two are appearing when the file is
 #wrongly encoded
-#\u017d and \xc2
+#\u017d which is this character (Ž) and \xc2 which is this character (Â)
+
 def remove_encoding_errors(lines):
     for idx, l in enumerate(lines):
         if u'\u017d' or u'\xc2' in l:
@@ -70,6 +71,9 @@ def remove_encoding_errors(lines):
 
 ############################################################################################
 #Check for duplicate keys
+#If the key is duplicate but the values are different I'm adding _1 to one of the keys
+#TODO make work in case the key was present more than 2 times
+
 def duplicate_keys(lines):
     keys = []
     duplicates = []
@@ -87,6 +91,7 @@ def duplicate_keys(lines):
 ############################################################################################
 #Adding Experiment ID to the files
 #Check if experiment id is there and if it's correctly written, other wise fix it or add it
+
 def experiment_id_fix(lines, file_name):
     #checking if EXPERIMENT_ID exists
     experiment_id = file_name.split("/")[-1].replace("_emd.tsv", "")
@@ -112,36 +117,10 @@ def experiment_id_fix(lines, file_name):
 
     return lines
 
-############################################################################################
-#fixing the SAMPLE_ID in case it was simmilar to the EXPERIMENT_ID
-#def sample_id_fix(lines, file_name):
-    #sample_id = file_name.split("/")[-1].replace("_smd.txt","")
-    
-    #if any("SAMPLE_ID" in s for s in lines):
-        #for idx, l in enumerate(lines):
-            #if l.startswith("SAMPLE_ID"):
-                #if re.search("^\d{2}_\w+_\w+_\w+$", l.split("\t")[1]):
-                    #pass
-                #else:
-                    #try:
-                        #sample_id = re.search("(^\d{2}_\w+_\w+_\w+)_\w+_[A-Z]_[0-9]$", sample_id).group(1)
-                        #lines[idx] = "SAMPLE_ID" + "\t" + sample_id
-                    #except AttributeError:
-                        #print("WARNING!! the sample_id in file {} doesn't fit the naming template. Please, check if something missing").format(file_name)
-                        #lines.append(sample_id)
-
-    #else:
-        #try:
-            #sample_id = re.search("^\d{2}_\w+_\w+_\w+$", l.split("\t")[1]).group()
-            #sample_id = "SAMPLE_ID" + "\t" + sample_id
-            #lines.append(sample_id)
-        #except AttributeError:
-            #print("WARNING!! the sample_id in file {} doesn't fit the naming template. Please, check if something missing").format(file_name)
-            
-    #return lines
 
 ############################################################################################
 #fixing the SAMPLE_ID in case it was simmilar to the DEEP_SAMPLE_ID
+
 def deep_sample_id_fix(lines, file_name):
     #checking if DEEP_SAMPLE_ID exists
     deep_sample_id = file_name.split("/")[-1]
@@ -171,6 +150,7 @@ def deep_sample_id_fix(lines, file_name):
 
 ############################################################################################
 #checks line start and append to previous if it does not start with a key
+
 def check_line_start(line):
     starts = ["5".decode('UTF-8', 'ignore'),"CGC".decode('UTF-8', 'ignore'),"HCS".decode('UTF-8', 'ignore'),"Julia".decode('UTF-8', 'ignore'),"Rep".decode('UTF-8', 'ignore'),"http".decode('UTF-8', 'ignore')]
     for s in starts:
@@ -180,6 +160,9 @@ def check_line_start(line):
     
 ############################################################################################
 #returning a list of all the lines of a file
+#TODO check if the file is actually in "keys value" tsv format, and if it wasn't remove the file 
+#from the list of files the script is working on and report the file name
+
 def lines_fixer1(lines):
     new_lines = []
     appended_lines = 1
@@ -232,6 +215,7 @@ def return_value(key, lines):
     return value
 
 
+#This function merges several file of the "keys value" tsv format into one big table
 def merge_files(files_list, all_keys):
     all_keys.append("FILE_NAME")
     
@@ -259,7 +243,8 @@ def merge_files(files_list, all_keys):
 
 
 ############################################################################################
-#keys filtering
+#keys filtering, filtering the files against their original keys and keeping the new fixed values
+
 def filtering_keys(original_keys, new_file):
     new_filtered_file = []
     for i in range(0,len(original_keys)):
