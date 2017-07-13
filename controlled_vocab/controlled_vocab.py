@@ -50,7 +50,6 @@ key_from_user = options.key
 
 
 """
-
 Loading dictionaries, we have 3 dictionaries (experiments, samples and regular expressions), the first two are made by running the build_dictionary.py first to build dictionaries from a set of files, the regular expression dictionary is "hard coded" according to the keys that we agreed that have to be checked for regular expression, all dictionaries are in .tsv format and can be opened and editted easily, so new keys and value can be added to these dictionaries.
 
 """
