@@ -2,7 +2,7 @@
 Pipeline for fixing some problems related to metadata of the DEEP project. Still under construction.
 More comments and better warnings and reporting will be added to the scripts soon.
 
-### Prerequisites
+## Prerequisites
 Before starting, the metadata_fixer.py script needs to [OpenRefine](http://openrefine.org/download.html). So please check if it's working on your system or if it needs any extra libraries.
 The controlled_vocab.py needs [Dictotoxml](https://pypi.python.org/pypi/dicttoxml) to convert the report dictionary to an XML format.
 
@@ -87,7 +87,7 @@ key3    value3_after_refine
 ```
 
 
-### 1- build_dictionary.py
+### 2- build_dictionary.py
 This script will also takes a path to a directory with metadata and checks all the files and make a white-list accepted values dictionary out of those files and output them in a human readabel TSV format, which can be editted easily to add new accepted keys and values.
 This script also comes with two files: 
 1. black_keys.txt file which have the balck keys that we are ignoring from checking, and these keys can have any value (e.g. COMMENTS)
@@ -104,7 +104,7 @@ We need it to build new dictionaries when we have new files, let's say now we ha
 
 These dictionaries are important for the third script
 
-### 1- controlled_vocab.py
+### 3- controlled_vocab.py
 This script has many options which can be viewed easily using:
 ```
 python controlled_vocab.py -h
@@ -148,3 +148,31 @@ Example: `python controlled_vocab.py --list_keys`
 
 `-list_regex` Will list all the keys we're doing regular expression on with the regular expression and an example of an accepted value
 Example: `python controlled_vocab.py --list_regex`
+
+
+## Extra Tools and tools_launcher.py
+### merging files
+This tool merges metadata files into one table with the each column is a key and each row is a file. Similar to the process written before.
+This tool will help you visualize several files in a table for any any check or manual changes.
+
+To merge files you just need to run the tools_launcher.py and us the option `-m DIRECTORY_PATH`
+Example: ` python tools_launcher.py -m metadata/experiment ` This will search for all the files in that directory and merge them together and produce the file `table.tsv`
+This script will also introduce a new key which is FILE_NAME to store the original file name in case you wanted to separate later to keep the original name
+
+### un-merging files
+You can also use the tools_launcher to separate a table similar to the one previously made to separate files that the script will output in a directory called files_after_table.
+You need to provide the path to the table you want to process and the name of the key (column name) which you want to be used for the naming of the files (e.g EXPERIMENT_ID, DEEP_SAMPLE_ID, FILE_NAME)
+Example: ` python tools_launcher.py -u TABLE_PATH -k IK_KEY_FOR_NAMING ` and this will produce a directory with the separated files and it will remove the keys introduced by merging and keep the original keys
+
+
+## Adding more JSON operations
+
+You can always use use the JSON operations on the OpenRefine web API.
+**First:** you have to start OpenRefine and start a new project and import your table. Once you've done that, you can easily click on **Undo / Redo** on the top left and then click on **Apply** you can see Figure 1
+![Figure 1](/images/figure_1.png)
+
+**Second** You can copy the JSON operations to the window and click **Perform Operations** and it will perform these operations on the table and the number of the operations will show next to **Undo / Redo**, see Figure 2
+![Figure 2](/images/figure_2.png)
+
+**Third** You can work on the table (change values, merge cells, combine values...etc). Then after you're done you can click back on **Undo / Redo** and click on **Extract** on the top left, and you get a window of the JSON operations that have been added with a check list. You can use the check list to remove any operation you don't need to be there anymore then you can simply copy the JSON operation on the left window and save it in the operations.json file. See Figure 3
+![Figure 3](/images/figure_3.png)
