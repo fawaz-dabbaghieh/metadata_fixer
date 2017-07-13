@@ -1,4 +1,18 @@
 # Metadata handler and fixer for the DEEP project metadata
+
+
+## Table of Contentx
+  * [Prerequisites](#prerequisites)
+  * [Getting started](#getting-started)
+    * [1- metadata_fixer.py](#1--metadata_fixer.py)
+    * [2- build_dictionary.py](#2--build_dictionary.py)
+    * [3- controlled_vocab.py](#3--controlled_vocab.py)
+  * [Extra Tools and tools_launcher.py](#extra-tools-and-tools_launcher.py)
+    * [merging files](#merging-files)
+    * [un-merging files](#un-merging-files)
+  * [Adding more JSON operations](#adding-more-json-operations)
+
+
 Pipeline for fixing some problems related to metadata of the DEEP project. Still under construction.
 More comments and better warnings and reporting will be added to the scripts soon.
 
