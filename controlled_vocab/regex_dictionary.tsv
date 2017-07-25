@@ -16,3 +16,5 @@ DEEP_SAMPLE_ID	^\d{2}_\w+_\w+_\w{2,4}$	According to the DEEP sample naming schem
 LIBRARY_GENERATION_FRAGMENT_SIZE_SELECTION	^\d+[-\d]+?\sbp$	A number or a range separated by - then a space then bp, e.g. 200-500 bp
 CHIP_PROTOCOL_DURATION_CROSSLINKING	^\d+\smin$	Number then a space then min,e.g. 5 min
 LIBRARY_GENERATION_PCR_NUMBER_CYCLES	\d+[-\d]+?$	A number or a range separated by a -, e.g. 15 or 12-13
+DONOR_ID	^\d{2}_\w+$	According to the DEEP naming scheme
+DONOR_AGE	^\d+$	A number only
