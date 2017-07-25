@@ -55,7 +55,7 @@ def return_value(key, lines):
     return value
 
 ############################################################################
-def combine_files(directory_path, output_file = "table.tsv"):
+def combine_files(directory_path):
     if os.path.exists(directory_path):
         pass
     else:
@@ -93,7 +93,7 @@ def combine_files(directory_path, output_file = "table.tsv"):
         new_file = "\t".join(new_file)
         new_table.append(new_file)
 
-    w = codecs.open(output_file, "w+")
+    w = codecs.open("table.tsv", "w+")
     for l in new_table:
         w.write(l.encode("utf-8")+"\n")
     w.close()

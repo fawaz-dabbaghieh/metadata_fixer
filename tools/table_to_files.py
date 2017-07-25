@@ -69,13 +69,13 @@ def separate_table(table_path, id_key):
         sys.exit()
 
     #Looping through the lines and writing the files
-    if not os.path.exists("files_from_table/"):
-        os.mkdir("files_from_table/")
+    if not os.path.exists(table_path.split("/")[-1]+"_files"):
+        os.mkdir(table_path.split("/")[-1]+"_files")
         
     for i in range(1,len(lines)):
         file_name = lines[i].split("\t")[id_idx]
         
-        f_write = open("files_from_table/" + file_name, "w+")
+        f_write = open(table_path.split("/")[-1]+"_files"+"/"+file_name+".tsv", "w+")
         new_file = tsv_to_files(lines = lines, i = i)
         filtered_file = filter_lines(new_file)
         for l in filtered_file:
