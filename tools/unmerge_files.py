@@ -49,11 +49,15 @@ def tsv_to_files(lines, i):
 #filter the extra keys
 def filter_lines(lines):
     filtered_lines = []
+    #for l in lines:
+        #if not l.split("\t")[1] == "[[[Extra Key Introduced]]]":
+            #filtered_lines.append(l)
     for l in lines:
-        if not l.split("\t")[1] == "[[[Extra Key Introduced]]]":
+        if not "[[[Extra Key Introduced]]]" in l:
             filtered_lines.append(l)
+    
     return filtered_lines
-            
+    
 ##################################################################################
 def separate_table(table_path, id_key):
     lines = read_files(table_path)

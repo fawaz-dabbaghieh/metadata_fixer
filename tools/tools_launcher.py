@@ -3,8 +3,8 @@ import sys
 import re
 import os
 import codecs
-import combine_tsv
-import table_to_files
+import merge_files
+import unmerge_files
 import comparing_files
 
 def strip(x): return x.strip()
@@ -41,7 +41,7 @@ new_file_path = options.new_file
 ##############################################
 if merge_directory is not None:
     if os.path.exists(merge_directory):
-        combine_tsv.combine_files(merge_directory)
+        merge_files.combine_files(merge_directory)
     else:
         print "the path you gave does not exits, please try again"
         
@@ -50,7 +50,7 @@ if merge_directory is not None:
 if table_path is not None:
     if id_key is not None:
         
-        table_to_files.separate_table(table_path, id_key)
+        unmerge_files.separate_table(table_path, id_key)
         
     else:
         print "you did not give the id key name in the table, please add that using -k or --file_key option"
