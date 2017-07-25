@@ -56,14 +56,16 @@ for root, dirs, files in os.walk(metadata_path):
 #####################################################################################################
 #copying all files to work on them, then output the results in a separate folder and delete the intermediate copy folder
 if metadata_path.endswith("/"):
-    metadata_cp = metadata_path.replace("/", "_cp/")
+    metadata_cp,sep,tail = metadata_path.rpartition("/")
+    metadata_cp = metadata_cp + "_cp/"
 else:
-    metadata_cp = metadata_path + "_cp"
+    metadata_cp = metadata_path + "_cp/"
 
 if not os.path.exists(metadata_cp):
     os.makedirs(metadata_cp)
     for directory in directories:
         os.makedirs(directory.replace(metadata_path, metadata_cp))
+        print directory.replace(metadata_path, metadata_cp)
 
         
 """
@@ -77,16 +79,16 @@ I'm reading each file once and looping through the lines
 
 all_files_keys = [] #storing the unique keys from all the files to make the big table
              
-skipped_files = []  #storing any file that is not in (key value) tsv format
+skipped_files = {}  #storing any file that is not in (key value) tsv format
 
 for f in metadata_files:
     lines = read_files(file_name = f)		#function for reading the files with the correct encoding
     
     #checking if the file is actually in (key value) tsv format, otherwise the file will be skipped
-    if check_if_tsv(lines):
+    if check_if_tsv(lines) == True:
         new_lines = lines_fixer1(lines)		#First round of fixes
         new_lines = lines_fixer2(new_lines)		#Second round of fixes
-        if f.endswith("emd.tsv"):                   #TODO readme
+        if f.endswith("emd.tsv"):
             new_lines = experiment_id_fix(new_lines, f)	#This function checks if the experiment_id is correct
         else:
             new_lines = deep_sample_id_fix(new_lines, f)	#This function checks if the sample_id is correct
@@ -100,18 +102,14 @@ for f in metadata_files:
                 pass
             else:
                 all_files_keys.append(k)
-        
-        f_write = open(f.replace(metadata_path,metadata_cp) + "keys", "w+") 
-        pickle.dump(keys, f_write)
-        f_write.close()
-        
+
+
         f_write = open(f.replace(metadata_path,metadata_cp), "w+")	#writing the fixed files
         for l in new_lines:
             f_write.write(l.encode('utf-8') + '\n')
         f_write.close()
     else:
-        skipped_files.append(f)
-    
+        skipped_files[f] = check_if_tsv(lines)    
     
 #remove skipped files before further analysis
 if len(skipped_files) != 0:
@@ -149,9 +147,6 @@ after_json_experiment_table = p.export_rows()
 p.delete_project()
 
 after_json_experiment_table = after_json_experiment_table.split("\n")
-
-#for idx, l in enumerate(after_json_experiment_table):
-    #after_json_experiment_table[idx] = after_json_experiment_table[idx].decode("utf-8")
     
 
 if after_json_experiment_table[-1] == "":
@@ -166,10 +161,11 @@ os.killpg(os.getpgid(open_refine.pid), signal.SIGTERM)  # Send the signal to all
 
 #splitting the table after REFINE to individual files
 if metadata_path.endswith("/"):
-    metadata_json = metadata_path.replace("/", "_after_refine/")
+    metadata_json,sep,tail = metadata_path.rpartition("/")
+    metadata_json = metadata_json + "_after_refine/"
 else:
-    metadata_json = metadata_path + "_after_refine"
-
+    metadata_json = metadata_path + "_after_refine/"
+    
 
 if not os.path.exists(metadata_json):
     os.makedirs(metadata_json)
@@ -184,6 +180,10 @@ if os.path.exists(metadata_json):
 
 #report skipped files
 if len(skipped_files) != 0:
-    print "The following files were skipped because one of the lines did not have a (key value) tab separated format"
     for f in skipped_files:
-        print f
+        print("The file ({}) was skipped because the line(s) ({}) in it are not in a key \\t value format").format(f, skipped_files[f])
+
+if os.path.exists("after_refine_table.tsv"):
+    os.remove("after_refine_table.tsv")
+if os.path.exists("all_files_table.tsv"):
+    os.remove("all_files_table.tsv")

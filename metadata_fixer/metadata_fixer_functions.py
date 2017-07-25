@@ -193,18 +193,20 @@ def lines_fixer2(new_lines1):
     return new_lines2
 
 ############################################################################################
-
+#This functions checks each line if it complies with the (key \t value) structure
+#It records the file and the line(s) that don't have the (key \t value) structure and returns it
+#if the file is OK it returns true so the pipeline can continue
 def check_if_tsv(lines):
     wrong_lines = []
     for idx, l in enumerate(lines):
-        if len(l.split("\t")) == 2:
+        if len(l.strip().split("\t")) == 2:
             continue
         else:
             wrong_lines.append(idx)
     if wrong_lines == []:
         return True
     else:
-        return False
+        return wrong_lines
 ############################################################################################
 #returning the value that corresponds to key
 def return_value(key, lines):
@@ -225,9 +227,10 @@ def merge_files(files_list, all_keys, metadata_path):
     new_table.append("\t".join(all_keys))	#First line is the keys
     
     if metadata_path.endswith("/"):
-        metadata_cp = metadata_path.replace("/", "_cp/")
+        metadata_cp,sep,tail = metadata_path.rpartition("/")
+        metadata_cp = metadata_cp + "_cp/"
     else:
-        metadata_cp = metadata_path + "_cp"  
+        metadata_cp = metadata_path + "_cp/" 
     
     for f in files_list:
         lines = read_files(f.replace(metadata_path, metadata_cp))
@@ -246,15 +249,14 @@ def merge_files(files_list, all_keys, metadata_path):
 
 
 ############################################################################################
-#keys filtering
-def filtering_keys(original_keys, new_file):
-    new_filtered_file = []
-    for i in range(0,len(original_keys)):
-        for l in new_file:
-            if l.split("\t")[0] == original_keys[i]:
-                new_filtered_file.append(l)
-    return new_filtered_file
-    
+
+#filter the extra keys
+def filter_lines(lines):
+    filtered_lines = []
+    for l in lines:
+        if not "[[[Extra Key Introduced]]]" in l:
+            filtered_lines.append(l)
+    return filtered_lines
 
 #converting back the big table to individual tsv files and filtering against the original keys
 def table_to_files1(lines, i):
@@ -269,14 +271,16 @@ def table_to_files1(lines, i):
 
 def table_to_files2(lines ,metadata_path):
     if metadata_path.endswith("/"):
-        metadata_json = metadata_path.replace("/", "_after_refine/")
+        metadata_json,sep,tail = metadata_path.rpartition("/")
+        metadata_json = metadata_json + "_after_refine/"
     else:
-        metadata_json = metadata_path + "_after_refine"
+        metadata_json = metadata_path + "_after_refine/"
         
     if metadata_path.endswith("/"):
-        metadata_cp = metadata_path.replace("/", "_cp/")
+        metadata_cp,sep,tail = metadata_path.rpartition("/")
+        metadata_cp = metadata_cp + "_cp/"
     else:
-        metadata_cp = metadata_path + "_cp"    
+        metadata_cp = metadata_path + "_cp/"  
     
     keys = lines[0].split("\t")
         
@@ -287,12 +291,8 @@ def table_to_files2(lines ,metadata_path):
         file_name = lines[i].split("\t")[file_name_idx].replace(metadata_path,metadata_json)
         f_write = open(file_name, "w+")
         new_file = table_to_files1(lines, i)
-        
-        #filter here before writing
-        original_keys_f = open(file_name.replace(metadata_json,metadata_cp) + "keys")
-        original_keys = pickle.load(original_keys_f)
-        original_keys_f.close()
-        new_filtered_file = filtering_keys(original_keys, new_file)
+
+        new_filtered_file = filter_lines(new_file)
         for l in new_filtered_file:
             f_write.write(l + "\n")
         f_write.close()
