@@ -1,10 +1,11 @@
-
 import codecs
 import re
 import sys
 import os
 
+
 def split(x): return x.split("\t")
+
 #function for reading files in the right encodings
 def read_files(file_name):
     encodings = ['utf-8-sig','iso-8859-1', 'utf-16']
@@ -24,7 +25,6 @@ def read_files(file_name):
             except UnicodeError:
                 print('got unicode error with %s , trying different encoding' % e)
             else:
-                #print('opening the file with encoding:  %s ' % e)
                 break
     else:
         print file_name
@@ -36,7 +36,7 @@ def read_files(file_name):
 def answers(l_old, l_new, compared_file):
     while True:
         print("The old value:\t{}\n"+"The new value:\t{}\n").format("\t".join(l_old), "\t".join(l_new))
-        answer = raw_input("\nPlease type in O/o to keep the old value, or type in N/n to change the old value to the new one, or Q/q to quit:")
+        answer = raw_input("\nPlease type O/o to keep the old value, or type in N/n to keep the new value, or Q/q to quit:")
         if (answer == "O") or (answer == "o"):
             compared_file.append(l_old)
             break
@@ -46,7 +46,7 @@ def answers(l_old, l_new, compared_file):
         elif (answer == "Q") or (answer == "q"):
             sys.exit()
         else:
-                print("You did not choose a right answer, please try again or type Q/q to quit: ")
+            print("You did not choose a right answer, please try again or type Q/q to quit: ")
                 
     return compared_file
 
@@ -80,7 +80,7 @@ def adding_new_keys(old,new, compared):
 
 
 #Taking the paths from raw input for old and new file
-def comparing_files(old_file_path, new_file_path):
+def comparing_files_with_output(old_file_path, new_file_path, output_file_path):
     if os.path.exists(old_file_path):
         if os.path.exists(new_file_path):
             new_file = read_files(new_file_path)
@@ -101,23 +101,53 @@ def comparing_files(old_file_path, new_file_path):
         compared_file[idx] = "\t".join(l)
 
 
-    f_write = open("combines"+old_file_path.split("/")[-1], "w+")
+    f_write = open(output_file_path, "w+")
     for l in compared_file:
         f_write.write(l.encode('utf-8'))
     f_write.close()
-
+    
 ############################################################################
+def comparing_files(old_file_path, new_file_path):
+    if os.path.exists(old_file_path):
+        if os.path.exists(new_file_path):
+            new_file = read_files(new_file_path)
+            old_file = read_files(old_file_path)
+        else:
+            print("the path {} does not exists, please try again").format(new_file_path)
+            sys.exit()
+    else:
+        print("the path {} does not exists, please try again").format(old_file_path)
+        sys.exit()
+
+    old_file = map(split, old_file)
+    new_file = map(split, new_file)
+
+    for idx_old, l_old in enumerate(old_file):
+        for idx_new, l_new in enumerate(new_file):
+            if l_old[0] == l_new[0]:
+                if l_old[1] == l_new[1]:
+                    pass
+                else:
+                    print("The file ({}) has the line\t({})\nThe file ({}) has the line\t({})\n").format(old_file_path,"\t".join(l_old), new_file_path,"\t".join(l_new))
+
+    
+############################################################################
+
+
 if __name__ == "__main__":
     arguments = sys.argv
 
-    if (len(arguments) == 1) or (len(arguments) == 2):
-        print "please, try again and give the path to the old file then the new file"
+    if len(arguments) < 3:
+        print "please, try again and give the path to the old file then the new file then optionally the output file path or name"
         sys.exit()
         
     else:
         if os.path.exists(arguments[1]):
             if os.path.exists(arguments[2]):
-                comparing_files(arguments[1], arguments[2])
+                if arguments[3]:
+                    comparing_files_with_output(arguments[1], arguments[2], arguments[3])
+                else:
+                    comparing_files(arguments[1], arguments[2])
             else:
                 print "the path to the new file does not exists, please try again (old file then new file)"
                 sys.exit()

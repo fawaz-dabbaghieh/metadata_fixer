@@ -7,11 +7,13 @@ import merge_files
 import unmerge_files
 import comparing_files
 
+
 def strip(x): return x.strip()
 def encode(x): return x.encode("utf-8")
 
+
 if sys.argv[1:] == []:
-    print "No Arguments were given, please try -h or --help"
+    print "No Arguments were given, please try -h or --help to print the help message"
     sys.exit()
     
 #Arguments parser
@@ -27,6 +29,9 @@ parser.add_option("-o","--old", dest="old_file", help="path to the old file for 
 
 parser.add_option("-n","--new", dest="new_file", help="path to the new file for comparison, needs the old file too to compare", metavar="NEW_PATH")
 
+parser.add_option("--out","--output_file", dest="output_file", help="Path or name to output file, if this is specified with having an Old and New file, there will be an output file which compares and merges the two files and the user can choose which value to keep in case they were different", metavar="OUTPUT_FILE")
+
+
 
 (options, args) = parser.parse_args()
 merge_directory = options.merge_files_dir
@@ -36,7 +41,7 @@ id_key = options.key
 
 old_file_path = options.old_file
 new_file_path = options.new_file
-
+output_file_path = options.output_file
 
 ##############################################
 if merge_directory is not None:
@@ -61,9 +66,10 @@ if old_file_path is not None:
     if os.path.exists(old_file_path):
         if new_file_path is not None:
             if os.path.exists(new_file_path):
-                
-                comparing_files.comparing_files(old_file_path, new_file_path)
-                
+                if output_file_path is not None:
+                    comparing_files.comparing_files_with_output(old_file_path, new_file_path, output_file_path)
+                else:
+                    comparing_files.comparing_files(old_file_path, new_file_path)
             else:
                 print("the path {} does not exists, try again").format(new_file_path)
                 sys.exit()
