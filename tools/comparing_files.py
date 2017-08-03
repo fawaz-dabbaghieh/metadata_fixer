@@ -9,34 +9,31 @@ def split(x): return x.split("\t")
 #function for reading files in the right encodings
 def read_files(file_name):
     encodings = ['utf-8-sig','iso-8859-1', 'utf-16']
-    if os.path.exists(file_name):
-        for e in encodings:
-            try:
-                f = codecs.open(file_name, 'r', encoding=e)
-                lines = f.readlines()
-                f.close()
-                lines_to_return = []
-                for l in lines:
-                    if not l.isspace():
-                        lines_to_return.append(l)
-                if lines_to_return:
-                    return lines_to_return
-                
-            except UnicodeError:
-                print('got unicode error with %s , trying different encoding' % e)
-            else:
-                break
-    else:
-        print file_name
-        print "the path {} does not exist".format(file_name)
-        
-    return file_name
+    for e in encodings:
+        try:
+            f = codecs.open(file_name, 'r', encoding=e)
+            lines = f.readlines()
+            f.close()
+            lines_to_return = []
+            for l in lines:
+                if not l.isspace():
+                    lines_to_return.append(l)
+            if lines_to_return:
+                return lines_to_return
+            
+        except UnicodeError:
+            print('got unicode error with %s , trying different encoding' % e)
+        else:
+            break
+
+
+
 
 #Taking answers for file comparison
 def answers(l_old, l_new, compared_file):
     while True:
-        print("The old value:\t{}\n"+"The new value:\t{}\n").format("\t".join(l_old), "\t".join(l_new))
-        answer = raw_input("\nPlease type O/o to keep the old value, or type in N/n to keep the new value, or Q/q to quit:")
+        print("The old value:\t{}\n"+"The new value:\t{}\n").format("\t".join(l_old).encode("utf-8").strip(), "\t".join(l_new).encode("utf-8").strip())
+        answer = raw_input("Please type O/o to keep the old value, or type in N/n to keep the new value, or Q/q to quit:")
         if (answer == "O") or (answer == "o"):
             compared_file.append(l_old)
             break
@@ -84,7 +81,13 @@ def comparing_files_with_output(old_file_path, new_file_path, output_file_path):
     if os.path.exists(old_file_path):
         if os.path.exists(new_file_path):
             new_file = read_files(new_file_path)
+            if new_file == new_file_path:
+                print("The file ({}) doesn't seem to be in a tsv format, please check the file and try again").format(new_file_path)
+                sys.exit()
             old_file = read_files(old_file_path)
+            if old_file == old_file_path:
+                print("The file ({}) doesn't seem to be in a tsv format, please check the file and try again").format(old_file_path)
+                sys.exit()
         else:
             print("the path {} does not exists, please try again").format(new_file_path)
             sys.exit()
@@ -111,7 +114,13 @@ def comparing_files(old_file_path, new_file_path):
     if os.path.exists(old_file_path):
         if os.path.exists(new_file_path):
             new_file = read_files(new_file_path)
+            if new_file == new_file_path:
+                print("The file ({}) doesn't seem to be in a tsv format, please check the file and try again").format(new_file_path)
+                sys.exit()
             old_file = read_files(old_file_path)
+            if old_file == old_file_path:
+                print("The file ({}) doesn't seem to be in a tsv format, please check the file and try again").format(old_file_path)
+                sys.exit()
         else:
             print("the path {} does not exists, please try again").format(new_file_path)
             sys.exit()
@@ -128,7 +137,7 @@ def comparing_files(old_file_path, new_file_path):
                 if l_old[1] == l_new[1]:
                     pass
                 else:
-                    print("The file ({}) has the line\t({})\nThe file ({}) has the line\t({})\n").format(old_file_path,"\t".join(l_old), new_file_path,"\t".join(l_new))
+                    print("The file ({}) has the line\t({})\nThe file ({}) has the line\t({})\n").format(old_file_path,"\t".join(l_old).encode("utf-8").strip(), new_file_path,"\t".join(l_new).encode("utf-8").strip())
 
     
 ############################################################################

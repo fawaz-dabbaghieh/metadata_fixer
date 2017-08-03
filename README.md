@@ -2,19 +2,32 @@
 
 
 ## Table of Contentx
+  * [Introduction](#Introduction)
   * [Prerequisites](#prerequisites)
   * [Getting started](#getting-started)
-    * [1- metadata_fixer.py](#1--metadata_fixer.py)
-    * [2- build_dictionary.py](#2--build_dictionary.py)
-    * [3- controlled_vocab.py](#3--controlled_vocab.py)
-  * [Extra Tools and tools_launcher.py](#extra-tools-and-tools_launcher.py)
+    * [1- metadata_fixer](#1--metadata_fixer)
+    * [2- build_dictionary](#2--build_dictionary)
+    * [3- controlled_vocab](#3--controlled_vocab)
+  * [Extra Tools](#extra-tools)
     * [merging files](#merging-files)
     * [un-merging files](#un-merging-files)
+    * [Comparing files](#comparing-files)
   * [Adding more JSON operations](#adding-more-json-operations)
 
 
-Pipeline for fixing some problems related to metadata of the DEEP project. Still under construction.
-More comments and better warnings and reporting will be added to the scripts soon.
+
+## Introduction
+Metadata is defined as a structured information which describes and explains other information source or files. This makes metadata a very important and integral part of any project that contains many information sources (e.g. different files, samples, experiments...etc.) which need to be described for easier access and understanding.
+
+Sometimes, if the project is getting information from different sources, the metadata could not be consisted and differ in the way some values are written.
+For example in our DEEP project we had this problem of having different sources of metadata describing the different samples and experiments done by different labs. And that lead to having problems such as:
+1. Some files were written in differnt encodings (i.e. written on different operating systems) and that had an effect on some of the special characters in the metadata files
+2. Some values were written differently depending on the lab that produced the file (e.g. Chip-seq or chip-seq or Chip-Seq)
+3. Files were supposed to be in a tsv format, but some had be mistake some extra tabls.
+
+Problems like these could accure in any project dealing with different sources of data and metadata.
+
+In this simple pipeline, we will describe the strategy we used to fix these problems for all our files.
 
 ## Prerequisites
 Before starting, the metadata_fixer.py script needs to [OpenRefine](http://openrefine.org/download.html). So please check if it's working on your system or if it needs any extra libraries.
@@ -26,7 +39,7 @@ the rest of the libraries are standard Python libraries (os, codecs, sys, re, su
 So far there are 3 main scripts that can be rand individually (metadata_fixer.py, build_dict.py and controlled_vocab.py). I will explain briefly what each one does and what kind of files does it accepts
 
 
-### 1- metadata_fixer.py
+### 1- metadata_fixer
 This script takes the path to a directory with metedata files as an argument or will ask for it in case it was ran without an argument, regardless of the structure of this directory, it will search recursively for all the files inside of it in a tree strcuture and store the paths of the files to work on. e.g:
 ```
 python metadata_fixer.py metadata/
@@ -60,7 +73,7 @@ We see that they have one key similar and a different key, when the script merge
 merged_file.tsv:
 key1    key2    key3
 value1  value2  [[[key introduced]]]
-value2  [[[key introduces]]]    value3
+value1  [[[key introduces]]]    value3
 ```
 
 
@@ -73,14 +86,14 @@ Taking the previous example:
 merged_file_after_refine.tsv:
 key1    key2    key3
 value1_after_refine  value2_after_refine  [[[key introduced]]]
-value2_after_refine  [[[key introduces]]]    value3_after_refine
+value1_after_refine  [[[key introduces]]]    value3_after_refine
 ```
 becomes:
 ```
 File1.tsv:
 key1    value1_after_refine
 key2    value2_after_refine
-keu3 [[[key introduce]]]
+key3 [[[key introduce]]]
 
 File2.tsv:
 key1    value1_after_refine
@@ -101,7 +114,7 @@ key3    value3_after_refine
 ```
 
 
-### 2- build_dictionary.py
+### 2- build_dictionary
 This script will also takes a path to a directory with metadata and checks all the files and make a white-list accepted values dictionary out of those files and output them in a human readabel TSV format, which can be editted easily to add new accepted keys and values.
 This script also comes with two files: 
 1. black_keys.txt file which have the balck keys that we are ignoring from checking, and these keys can have any value (e.g. COMMENTS)
@@ -118,7 +131,7 @@ We need it to build new dictionaries when we have new files, let's say now we ha
 
 These dictionaries are important for the third script
 
-### 3- controlled_vocab.py
+### 3- controlled_vocab
 This script has many options which can be viewed easily using:
 ```
 python controlled_vocab.py -h
@@ -164,8 +177,8 @@ Example: `python controlled_vocab.py --list_keys`
 Example: `python controlled_vocab.py --list_regex`
 
 
-## Extra Tools and tools_launcher.py
-### merging files
+## Extra Tools
+### Merging files
 This tool merges metadata files into one table with the each column is a key and each row is a file. Similar to the process written before.
 This tool will help you visualize several files in a table for any any check or manual changes.
 
@@ -173,11 +186,43 @@ To merge files you just need to run the tools_launcher.py and us the option `-m 
 Example: ` python tools_launcher.py -m metadata/experiment ` This will search for all the files in that directory and merge them together and produce the file `table.tsv`
 This script will also introduce a new key which is FILE_NAME to store the original file name in case you wanted to separate later to keep the original name
 
-### un-merging files
+### Un-merging files
 You can also use the tools_launcher to separate a table similar to the one previously made to separate files that the script will output in a directory called files_after_table.
 You need to provide the path to the table you want to process and the name of the key (column name) which you want to be used for the naming of the files (e.g EXPERIMENT_ID, DEEP_SAMPLE_ID, FILE_NAME)
 Example: ` python tools_launcher.py -u TABLE_PATH -k IK_KEY_FOR_NAMING ` and this will produce a directory with the separated files and it will remove the keys introduced by merging and keep the original keys
 
+### Comparing files
+You can use this tool to compare two metadata files and check for the differences, the files don't have to be ordered the same. The script will compare the files key-wise and show you the line that are different. You can compare two files and only look at the differences, or you can actually merge the two files by choosing which value you want to keep, and you'll get an output merged file.
+
+1. An example for only comparing two files without an output: `python tools_launcher.py -o OLD_FILE_PATH -n NEW_FILE_PATH` and this will print the differences on the terminal screen in this form:
+
+```
+The file (OLD_FILE_PATH) has the line (key1 value1)
+The file (NEW_FILE_PATH) has the line (key1 value2)
+
+The file (OLD_FILE_PATH) has the line (key2 value3)
+The file (NEW_FILE_PATH) has the line (key2 value4)
+```
+
+
+2. An example for comparing two files with an output: `python tools_launcher.py -o OLD_FILE_PATH -n NEW_FILE_PATH --out OUTPUT_FILE_PATH` the script will compare each key of the one file with another, if the they key is the same and the value is different you'll get to choose which one to keep (the value from the Old file or the value from the New file) or you can type q/Q to quit, in this example we'll chose for key1 the old value and for key2 the new value and you can see what the output file will look like:
+
+```
+The old value:	key1	value1
+The new value:	key1	value2
+
+Please type O/o to keep the old value, or type in N/n to keep the new value, or Q/q to quit:o
+
+The old value:	key2	value3
+The new value:	key2	value4
+
+Please type O/o to keep the old value, or type in N/n to keep the new value, or Q/q to quit:n
+
+$cat OUTPUT_FILE_PATH
+key1    value1
+key2    value4
+
+```
 
 ## Adding more JSON operations
 

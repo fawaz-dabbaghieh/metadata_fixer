@@ -29,7 +29,7 @@ parser.add_option("-o","--old", dest="old_file", help="path to the old file for 
 
 parser.add_option("-n","--new", dest="new_file", help="path to the new file for comparison, needs the old file too to compare", metavar="NEW_PATH")
 
-parser.add_option("--out","--output_file", dest="output_file", help="Path or name to output file, if this is specified with having an Old and New file, there will be an output file which compares and merges the two files and the user can choose which value to keep in case they were different", metavar="OUTPUT_FILE")
+parser.add_option("--out","--output_file", dest="output_file", help="Path or name to output file, if this is specified with having an Old and New file, there will be an output file which compares and merges the two files and the user can choose which value to keep in case they were different. If otherwise not specified, the differences of the Old and New files will printed to the terminal", metavar="OUTPUT_FILE")
 
 
 

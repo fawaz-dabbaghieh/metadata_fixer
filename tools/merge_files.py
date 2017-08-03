@@ -25,11 +25,22 @@ def read_files(file_name):
                 #print('opening the file with encoding:  %s ' % e)
                 break
     else:
-        print file_name
-        print "the path {} does not exist".format(file_name)
-        
-    return file_name
+        return files_name
 
+
+
+def check_if_tsv(lines): 
+    wrong_lines = []
+    for idx, l in enumerate(lines):
+        if len(l.strip().split("\t")) == 2:
+            continue
+        else:
+            wrong_lines.append(idx)
+    if wrong_lines == []:
+        return True
+    else:
+        return wrong_lines
+    
 
 #making a list of keys and adding new keys.
 def new_keys(keys, files):
@@ -66,6 +77,7 @@ def combine_files(directory_path):
     for root, dirs, files in os.walk(directory_path):
         for f in files:
             metadata_files.append(os.path.join(root, f))
+
     #Get a list of all keys
     keys = []
     keys = new_keys(keys, metadata_files)
@@ -73,25 +85,32 @@ def combine_files(directory_path):
     #making the tsv table
     new_table = []
     new_table.append("\t".join(keys))	#First line is all keys separated with a tab
-
+    
+    skipped_files = []
     for f in metadata_files:
         lines = read_files(f)
-        if lines == f:  #This file will be skipped because the read_files() functions returned the name of the file, that mean there was an error and the file wasn't read properly
+        if liens == f:#This file will be skipped because the read_files() functions returned the name of the file, that mean there was an error and the file wasn't read properly
+            skipped_files.append(f)
             continue
-        #adding the file name with the new key to the file before merging
-        lines.append("FILE_NAME\t" + f.split("/")[-1])
-        for idx, l in enumerate(lines):
-            lines[idx] = l.split("\t")
+        elif check_if_tsv(liens) == Ture:
+            #adding the file name with the new key to the file before merging
+            lines.append("FILE_NAME\t" + f.split("/")[-1])
+            for idx, l in enumerate(lines):
+                lines[idx] = l.split("\t")
 
-        new_file = []
-        for key in keys:
-            value = return_value(key, lines)
-            new_file.append(value)
-            
-        for idx, value in enumerate(new_file):
-            new_file[idx] = value.strip()
-        new_file = "\t".join(new_file)
-        new_table.append(new_file)
+            new_file = []
+            for key in keys:
+                value = return_value(key, lines)
+                new_file.append(value)
+                
+            for idx, value in enumerate(new_file):
+                new_file[idx] = value.strip()
+            new_file = "\t".join(new_file)
+            new_table.append(new_file)
+        else:
+            print("The file ({}) is not in the accepted format which is a (key value) and tab separated, please check it again").format(table_path)
+            skipped_files.append(f)
+
 
     w = codecs.open("table.tsv", "w+")
     for l in new_table:
