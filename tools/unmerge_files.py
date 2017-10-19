@@ -39,7 +39,7 @@ def check_lines_equals(lines):
             continue
         else:
             wrong_lines.append(idx)
-    if wrong_liens == []:
+    if wrong_lines == []:
         return True
     else:
         return wrong_lines

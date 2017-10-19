@@ -89,10 +89,10 @@ def combine_files(directory_path):
     skipped_files = []
     for f in metadata_files:
         lines = read_files(f)
-        if liens == f:#This file will be skipped because the read_files() functions returned the name of the file, that mean there was an error and the file wasn't read properly
+        if lines == f:#This file will be skipped because the read_files() functions returned the name of the file, that mean there was an error and the file wasn't read properly
             skipped_files.append(f)
             continue
-        elif check_if_tsv(liens) == Ture:
+        elif check_if_tsv(lines) == Ture:
             #adding the file name with the new key to the file before merging
             lines.append("FILE_NAME\t" + f.split("/")[-1])
             for idx, l in enumerate(lines):
