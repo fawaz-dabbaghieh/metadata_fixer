@@ -1,6 +1,0 @@
-1- Better error catching and reporting	(almost done, it works fine so far)
-2- Test and commit the separate tools (merging_files.py, un_merging_files.py)	(done)
-3- Continue the documentation and write about how to import the JSON commands to the OpenRefine API and add new JSON operations if needed.	(done)
-4- One main script with opetion which can call the other scripts
-5- Changing the XML format to more nested form so it's easier to search for warnings later	(done)
-6- Make a template for the XML and connect the report with the template for better readability
