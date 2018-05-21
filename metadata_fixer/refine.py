@@ -1,13 +1,12 @@
 # originally written by David Huynh (@dfhuynh)
-#
 # requires installation of urllib2_file from https://github.com/seisen/urllib2_file/#readme
 
-import urllib2_file
+# import urllib2_file
 import urllib2, urlparse, os.path, time, json
 
 class Refine:
   def __init__(self, server='http://127.0.0.1:3333'):
-    self.server = server[0,-1] if server.endswith('/') else server
+    self.server = server[0, -1] if server.endswith('/') else server
   
   def new_project(self, file_path, options=None):
     file_name = os.path.split(file_path)[-1]

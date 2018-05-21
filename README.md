@@ -4,8 +4,8 @@
 ## Table of Contents
  * [Introduction](#Introduction)
  * [Basic Description of Pipeline](#basic-description-of-pipeline)
-    * [Preparing and Fixing Metadata Files][#preparing-and-fixing-metadata-files]
-    * [Metadata Files Checking][#metadata-files-checking]
+    * [Preparing and Fixing Metadata Files](#preparing-and-fixing-metadata-files)
+    * [Metadata Files Checking](#metada-files-checking)
  * [Prerequisites](#prerequisites)
  * [Getting started](#getting-started)
     * [1- metadata_fixer](#1--metadata_fixer)
